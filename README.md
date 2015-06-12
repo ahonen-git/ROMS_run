@@ -4,6 +4,14 @@ ROMS_run provides scripts required for running ROMS.
 
 This master repo. is for v1d in inx1.
 
+## Requirements
+- ROMS-BEC source must be exist in ../ROMS-BEC; this is described in MY_ROMS_SRC in build.bash.
+- Boundary conditions and geometry files must be exist in /wrk/misumi/roms_data/v1d
+    - v1d_frc.nc
+    - v1d_grd.nc
+    - v1d_ini.nc
+    - v1d_sflux.nc
+
 ## Procedure to run ROMS
 
 ### 1. Build ROMS
