@@ -13,3 +13,6 @@ pgm=${home_dir}/oceanM
 wdir=/wrk/misumi/roms_cases/$casename
 name=${casename}_${num}
 ```
+- Edit casename.
+- Note that wdir is created in /wrk/misumi/roms_cases/$casename
+- casename is also used in job name and **in file**. 
