@@ -2,8 +2,17 @@
 
 ROMS_run provides scripts required for running ROMS.
 
+This master repo. is for v1d in inx1.
+
 ## Procedure to run ROMS
-### 1. Edit go_001.sh
+
+### 1. Build ROMS
+``` sh
+% ./build.bash -j 8
+```
+- Note that "ROMS_APPLICATION" in build.bash must be the same as the header-file name, like v1d.h.
+
+### 2. Edit go_001.sh
 
 [ go_001.sh ]
 ``` sh
@@ -18,7 +27,7 @@ name=${casename}_${num}
 - Note that wdir is created in /wrk/misumi/roms_cases/$casename
 - casename is also used in **in-file name**. 
 
-### 2. Edit v1d_001.in
+### 3. Edit v1d_001.in
 
 [ v1d_001.in ]
 ``` sh
@@ -46,8 +55,8 @@ BPARNAM =  External/bec.in
 ...
 ```
 
-### 3. Copy binary
+### 4. Run ROMS
 
 ``` sh
-% cp ../ROMS_build/oceanM .
+% ./go_001.sh
 ```
