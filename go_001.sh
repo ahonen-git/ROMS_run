@@ -18,7 +18,7 @@ fi
 cp -r External ${wdir}
 
 qsub <<EOF
-#PBS -P 120128
+#PBS -P 151018
 #PBS -q xs
 #PBS -l select=1:ncpus=2:mem=100mb:mpiprocs=2
 #PBS -l walltime=24:00:00
