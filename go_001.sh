@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-casename=test
+casename=v1d
 num=001
 home_dir=${PWD}
 pgm=${home_dir}/oceanM

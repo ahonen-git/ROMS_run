@@ -69,7 +69,7 @@
 
 ! C-preprocessing Flag.
 
-    MyAppCPP = osp001
+    MyAppCPP = v1d
 
 ! Input variable information file name.  This file needs to be processed
 ! first so all information arrays can be initialized properly.
@@ -721,8 +721,8 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
 ! Input NetCDF file names, [1:Ngrids].
 
-     GRDNAME == /wrk/gtniwa/Misumi/H25/data/osp/osp001_grd.nc
-     ININAME == /wrk/gtniwa/Misumi/H25/data/osp/osp001_ini.nc
+     GRDNAME == /wrk/misumi/roms_data/v1d/v1d_grd.nc
+     ININAME == /wrk/misumi/roms_data/v1d/v1d_ini.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_npzd.nc
@@ -761,18 +761,18 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
      NFFILES == 2                          ! number of unique forcing files
 
-     FRCNAME == /wrk/gtniwa/Misumi/H25/data/osp/osp001_frc.nc \
-                /wrk/gtniwa/Misumi/H25/data/osp/osp001_sflux.nc
+     FRCNAME == /wrk/misumi/roms_data/v1d/v1d_frc.nc   \
+                /wrk/misumi/roms_data/v1d/v1d_sflux.nc
 
 ! Output NetCDF file names, [1:Ngrids].
 
      GSTNAME == ocean_gst.nc
-     RSTNAME == osp001_rst001.nc
-     HISNAME == osp001_his001.nc
+     RSTNAME == v1d_rst001.nc
+     HISNAME == v1d_his001.nc
      TLMNAME == ocean_tlm.nc
      TLFNAME == ocean_tlf.nc
      ADJNAME == ocean_adj.nc
-     AVGNAME == osp001_avg001.nc
+     AVGNAME == v1d_avg001.nc
      DIANAME == ocean_dia.nc
      STANAME == ocean_sta.nc
      FLTNAME == ocean_flt.nc
