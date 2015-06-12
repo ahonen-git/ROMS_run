@@ -44,3 +44,10 @@ FLTNAME == ocean_flt.nc
 ...
 BPARNAM =  External/bec.in
 ...
+```
+
+### 3. Copy binary
+
+``` sh
+% cp ../ROMS_build/oceanM .
+```
