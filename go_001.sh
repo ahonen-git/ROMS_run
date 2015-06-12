@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
-#
+
+casename=test
 num=001
 home_dir=${PWD}
 pgm=${home_dir}/oceanM
-wdir=/wrk/misumi/roms_cases/osp/osp_001
-name=osp001_${num}
+wdir=/wrk/misumi/roms_cases/$casename
+name=${casename}_${num}
 
 rm -f c.$name
 rm -f o.$name
