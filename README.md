@@ -3,7 +3,7 @@
 ROMS_run provides scripts required for running ROMS.
 
 ## Procedure to run ROMS
-1. Edit go_001.sh
+### 1. Edit go_001.sh
 
 [ go_001.sh ]
 ``` sh
@@ -18,7 +18,7 @@ name=${casename}_${num}
 - Note that wdir is created in /wrk/misumi/roms_cases/$casename
 - casename is also used in **in-file name**. 
 
-2. Edit v1d_001.in
+### 2. Edit v1d_001.in
 
 [ test_001.in ]
 ``` sh
