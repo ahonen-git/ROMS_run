@@ -20,7 +20,7 @@ name=${casename}_${num}
 
 ### 2. Edit v1d_001.in
 
-[ test_001.in ]
+[ v1d_001.in ]
 ``` sh
 VARNAME = External/varinfo.dat
 ...
