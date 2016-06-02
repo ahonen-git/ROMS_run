@@ -80,13 +80,12 @@ done
 # determine the name of the ".h" header file with the application
 # CPP definitions.
 
-export   ROMS_APPLICATION=v1d
+export   ROMS_APPLICATION=${CASE_NAME}
 
 # Set a local environmental variable to define the path to the directories
 # where all this project's files are kept.
 
-#export        MY_ROOT_DIR=${HOME}/Misumi/ROMS-BEC/Build
-export        MY_ROOT_DIR=../ROMS-BEC
+export        MY_ROOT_DIR=${ROMS_SRC_DIR}
 export     MY_PROJECT_DIR=${PWD}
 
 # The path to the user's local current ROMS source code.
@@ -108,8 +107,8 @@ export     MY_PROJECT_DIR=${PWD}
 # ${MY_ROMS_SRC}/Compilers. If this is the case, the you need to keep
 # these configurations files up-to-date.
 
- export         COMPILERS=${MY_ROMS_SRC}/Compilers
-#export         COMPILERS=${HOME}/Compilers
+#export         COMPILERS=${MY_ROMS_SRC}/Compilers
+ export         COMPILERS=${MY_PROJECT_DIR}/Compilers
 
 # Set tunable CPP options.
 #
@@ -133,8 +132,10 @@ export     MY_PROJECT_DIR=${PWD}
 # out. Any string value (including off) will evaluate to TRUE in
 # conditional if-statements.
 
- export           USE_MPI=on            # distributed-memory parallelism
- export        USE_MPIF90=on            # compile with mpif90 script
+if [ "${OPT_PARALLEL}" = "on" ]; then
+  export           USE_MPI=on            # distributed-memory parallelism
+  export        USE_MPIF90=on            # compile with mpif90 script
+fi
 #export         which_MPI=mpich         # compile with MPICH library
 #export         which_MPI=mpich2        # compile with MPICH2 library
 # export         which_MPI=openmpi       # compile with OpenMPI library

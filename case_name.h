@@ -61,7 +61,7 @@
 #undef  NPZD_FRANKS
 #undef  NPZD_IRON
 #undef  NPZD_POWELL
-# define  BEC
+#undef  BEC
 
 #ifdef BIO_FENNEL
 # define CARBON
