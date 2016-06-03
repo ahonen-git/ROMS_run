@@ -15,6 +15,7 @@ This master branch is to run the model in inx.
         ``` sh
         $ ./build.bash -j 8
         ```
+
 ### 3. Run ROMS
 - Edit **go.sh** and set **$num**.
 - Edit **${CASE_NAME}_${num}.in** to set configuration for this run.
