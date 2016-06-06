@@ -11,7 +11,7 @@ cp -r External ${WORK_DIR}
 qsub <<EOF
 #PBS -P ${D_CODE}
 #PBS -q ${QUE}
-#PBS -l select=1:ncpus=${N_CPUS}:mem=100mb:mpiprocs=${N_CPUS}
+#PBS -l select=${N_NODES}:ncpus=16:mem=100mb:mpiprocs=${N_CPUS}
 #PBS -l walltime=${WALL_TIME}
 #PBS -N ${JOB_NAME}
 #PBS -o o.${name}
