@@ -17,8 +17,3 @@ for line in fi0:
   
 fi0.close()
 fo0.close()
-
-#txt = fi0.readlines()
-#fi0.close()
-#
-#for line in txt:
