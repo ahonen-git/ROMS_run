@@ -2,7 +2,7 @@
 
 source build.config
 
-num=001
+num=${R_NUM}
 name=${CASE_NAME}_${num}
 
 cp ${PGM} ${WORK_DIR}/bin/${PGM}
