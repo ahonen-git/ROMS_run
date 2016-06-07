@@ -7,7 +7,7 @@ r_num = os.environ['R_NUM']
 
 outfile=case_name+'_'+r_num+'.in'
 
-fi0 = open('template_001.in','r')
+fi0 = open('template.in','r')
 fo0 = open(outfile,'a')
 
 for line in fi0:
