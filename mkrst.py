@@ -10,10 +10,24 @@ def error_exit(msg):
 
 def mod_ini(line,rst):
   x = line.split("==")
-  print x[0], x[1]
-  x[1] = " "+rst+"\n"
-  print x[0], x[1]
+  x[1] = " "+rst
   line = "==".join(x)
+  line = line + "\n"
+  return line
+
+def mod_ntimes(line,val):
+  x = line.split("==")
+  x[1] = int(x[1]) + int(val)
+  x[1] = " "+str(x[1])
+  line = "==".join(x)
+  line = line + "\n"
+  return line
+
+def mod_dt(line,val):
+  x = line.split("==")
+  x[1] = " "+val
+  line = "==".join(x)
+  line = line + "\n"
   return line
 
 case_name = os.environ['CASE_NAME']
@@ -21,6 +35,8 @@ r_num = os.environ['R_NUM']
 p_num = int(r_num)-1
 p_num = str(p_num)
 p_num = p_num.zfill(3)
+d_ntimes = os.environ['D_NTIMES']
+dt = os.environ['DT']
 
 rstfile = os.environ['WORK_DIR'] + "/out/" + case_name + ".r." + p_num + ".nc"
 
@@ -42,14 +58,18 @@ fo0 = open(outfile,'w')
 
 for line in fi0:
   if not re.match(r'^!',line):
-    if 'ININAME'   in line:
+    if   re.match(r'^\s*ININAME\s*==',line):
       line = mod_ini(line, rstfile)
-    elif 'RSTNAME' in line:
+    elif re.match(r'^\s*RSTNAME\s*==',line):
       line = line.replace(p_num,r_num)
-    elif 'HISNAME' in line:
+    elif re.match(r'^\s*HISNAME\s*==',line):
       line = line.replace(p_num,r_num)
-    elif 'AVGNAME' in line:
+    elif re.match(r'^\s*AVGNAME\s*==',line):
       line = line.replace(p_num,r_num)
+    elif re.match(r'^\s*NTIMES\s*==',line):
+      line = mod_ntimes(line, d_ntimes)
+    elif re.match(r'^\s*DT\s*==',line):
+      line = mod_dt(line, dt)
   fo0.write(line)
   
 fi0.close()
