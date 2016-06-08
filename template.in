@@ -207,21 +207,21 @@ ad_VolCons(north) ==  F                            ! northern boundary
 
        NRREC == 0
    LcycleRST == T
-        NRST == 58400
+        NRST == 144
         NSTA == 1
         NFLT == 1
-       NINFO == 800   
+       NINFO == 144
 
 ! Output history, average, diagnostic files parameters.
 
      LDEFOUT == T
-        NHIS == 80
+        NHIS == 144
      NDEFHIS == 0
       NTSAVG == 1
-        NAVG == 160
+        NAVG == 144
      NDEFAVG == 0
       NTSDIA == 1
-        NDIA == 800
+        NDIA == 144
      NDEFDIA == 0
 
 ! Output tangent linear and adjoint models parameters.
