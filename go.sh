@@ -23,10 +23,8 @@ cd ${WORK_DIR}
 
 mpijob ${WORK_DIR}/bin/${PGM} ${HOME_DIR}/${name}.in > ${HOME_DIR}/c.${name}
 
-mv ${HOME_DIR}/c.${name}  ${WORK_DIR}/log/c.${name}
-mv ${HOME_DIR}/e.${name}  ${WORK_DIR}/log/e.${name}
-mv ${HOME_DIR}/o.${name}  ${WORK_DIR}/log/o.${name}
-cp ${HOME_DIR}/${name}.in ${WORK_DIR}/in/${name}.in
-mv ${WORK_DIR}/*.nc       ${WORK_DIR}/out/
+mv ${HOME_DIR}/?.${name}  ${WORK_DIR}/log
+cp ${HOME_DIR}/${name}.in ${WORK_DIR}/in
+mv ${WORK_DIR}/*.nc       ${WORK_DIR}/out
 
 EOF
