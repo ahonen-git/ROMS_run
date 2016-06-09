@@ -722,7 +722,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! Input NetCDF file names, [1:Ngrids].
 
      GRDNAME == /wrk/misumi/roms_data/v1d/v1d_grd.nc
-     ININAME == /wrk/misumi/roms_data/v1d/v1d_ini.nc
+     ININAME == /wrk/misumi/roms_data/v1d/v1d_ini_160609.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_npzd.nc
@@ -762,7 +762,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
      NFFILES == 2                          ! number of unique forcing files
 
      FRCNAME == /wrk/misumi/roms_data/v1d/v1d_frc.nc   \
-                /wrk/misumi/roms_data/v1d/v1d_sflux.nc
+                /wrk/misumi/roms_data/v1d/v1d_sflux_160609.nc
 
 ! Output NetCDF file names, [1:Ngrids].
 
