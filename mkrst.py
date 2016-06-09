@@ -49,9 +49,6 @@ if not os.path.isfile(infile):
 if os.path.isfile(outfile):
   msg = outfile+" has already exist."
   error_exit(msg)
-if not os.path.isfile(rstfile):
-  msg = rstfile+" does not exist."
-  error_exit(msg)
 
 fi0 = open(infile ,'r')
 fo0 = open(outfile,'w')
