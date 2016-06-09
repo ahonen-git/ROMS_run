@@ -135,6 +135,9 @@ export     MY_PROJECT_DIR=${PWD}
 if [ "${OPT_PARALLEL}" = "on" ]; then
   export           USE_MPI=on            # distributed-memory parallelism
   export        USE_MPIF90=on            # compile with mpif90 script
+else
+  export           USE_MPI=            # distributed-memory parallelism
+  export        USE_MPIF90=            # compile with mpif90 script
 fi
 #export         which_MPI=mpich         # compile with MPICH library
 #export         which_MPI=mpich2        # compile with MPICH2 library
