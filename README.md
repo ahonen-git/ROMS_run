@@ -24,8 +24,11 @@ This master branch is to run the model in inx.
         $ ./go.sh
         ```
 
-## Secs in typical time periods
+## Secs in typical time periods for 365.25 days in a year
 
-|Period|Secs|
-|------|----|
-|1|1|
+|Period|Secs    |
+|------|--------|
+|1 sec |1       |
+|1 day |86400   |
+|1 mon |2629800 |
+|1 yr  |31557600|
