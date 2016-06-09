@@ -23,3 +23,9 @@ This master branch is to run the model in inx.
         ```sh
         $ ./go.sh
         ```
+
+## Secs in typical time periods
+
+|Period|Secs|
+|------|----|
+|1|1|
