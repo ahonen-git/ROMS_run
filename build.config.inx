@@ -13,6 +13,9 @@ export WALL_TIME=12:00:00
 export R_NUM=001
 export FORT=ifort
 
+export USE_SLATEC=on
+export SLATEC_LIBDIR=/Users/misumi/lib
+
 export P_JOB=""
 
 export D_NTIMES=525960
