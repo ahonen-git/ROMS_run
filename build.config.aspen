@@ -2,6 +2,7 @@ export CASE_NAME=`echo ${PWD##*/}`
 export HOME_DIR=${PWD}
 export WORK_DIR=/Users/misumi/roms_out/${CASE_NAME}
 export ROMS_SRC_DIR=/Users/misumi/tower/ROMS-BEC
+export ROMS_DAT_DIR=/Users/misumi/roms_data
 export OPT_PARALLEL=off
 export R_NUM=001
 export FORT=gfortran
