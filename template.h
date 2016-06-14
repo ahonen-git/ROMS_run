@@ -63,6 +63,8 @@
 #undef  NPZD_POWELL
 #undef  BEC
 
+#undef  COAG
+
 #ifdef BIO_FENNEL
 # define CARBON
 # define DENITRIFICATION

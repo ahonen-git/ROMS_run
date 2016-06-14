@@ -45,8 +45,7 @@ mv ${WORK_DIR}/*.nc       ${WORK_DIR}/out
 EOF
 }
 
-
-source build.config
+source build.config.inx
 
 num=${R_NUM}
 name=${CASE_NAME}_${num}
