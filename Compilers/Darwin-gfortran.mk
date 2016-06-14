@@ -97,6 +97,13 @@ ifdef USE_ESMF
 endif
 
 #
+# Configuration for slatec
+#
+ifdef USE_SLATEC
+             LIBS += -L$(SLATEC_LIBDIR) -lslatec
+endif
+
+#
 # Use full path of compiler.
 #
                FC := $(shell which ${FC})

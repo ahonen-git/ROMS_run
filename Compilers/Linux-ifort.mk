@@ -100,6 +100,14 @@ ifdef USE_ESMF
              LIBS += $(ESMF_F90LINKPATHS) -lesmf -lC
 endif
 
+#
+# Configuration for slatec
+#
+ifdef USE_SLATEC
+             LIBS += -L$(SLATEC_LIBDIR) -lslatec
+endif
+
+
        clean_list += ifc* work.pc*
 
 #
