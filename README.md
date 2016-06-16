@@ -7,6 +7,10 @@ This master branch is to run the model in inx.
 ## Requirements
 - gnu-sed (homebrew)
 - libmpc (homebrew)
+- hdf5 (self compile)
+- zlib (self compile)
+- netcdf (self compile)
+- netcdf-fortran (self compile)
 
 ## Procedure to run ROMS
 
