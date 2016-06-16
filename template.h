@@ -25,31 +25,36 @@
 #define SOLAR_SOURCE
 #define NONLIN_EOS
 #define SALINITY
-#define SPLINES
+#undef  SPLINES
 #define AVERAGES
 #define SOLVE3D
+#define QUADRATIC
 
 #define LMD_MIXING
 #ifdef LMD_MIXING
 # define LMD_RIMIX
 # define LMD_CONVEC
+# define LMD_DDMIX
 # define LMD_SKPP
-# define LMD_BKPP
 # define LMD_NONLOCAL
 #endif
 
 #define BULK_FLUXES
 #ifdef BULK_FLUXES
-# define LONGWAVE
-# define ANA_RAIN
+# undef EMINUSP
+# define ANA_SSFLUX
+# undef  LONGWAVE
+# define LONGWAVE_OUT
 #else
 # define ANA_SMFLUX
 # define ANA_STFLUX
 #endif
 
-#define ANA_SSFLUX
 #define ANA_BSFLUX
 #define ANA_BTFLUX
+
+#define TCLIMATOLOGY
+#define TCLM_NUDGING
 
 /*
 **  Biological model options.

@@ -207,21 +207,21 @@ ad_VolCons(north) ==  F                            ! northern boundary
 
        NRREC == 0
    LcycleRST == T
-        NRST == 4383
+        NRST == ${H_NTIMES}
         NSTA == 1
         NFLT == 1
-       NINFO == 4383
+       NINFO == ${I_NTIMES}
 
 ! Output history, average, diagnostic files parameters.
 
      LDEFOUT == T
-        NHIS == 4383
+        NHIS == ${H_NTIMES}
      NDEFHIS == 0
       NTSAVG == 1
-        NAVG == 4383
+        NAVG == ${H_NTIMES}
      NDEFAVG == 0
       NTSDIA == 1
-        NDIA == 4383
+        NDIA == ${H_NTIMES}
      NDEFDIA == 0
 
 ! Output tangent linear and adjoint models parameters.
@@ -722,7 +722,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! Input NetCDF file names, [1:Ngrids].
 
      GRDNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_grd_160614.nc
-     ININAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_ini_160614.nc
+     ININAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_ini_160616.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_npzd.nc
@@ -745,7 +745,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! except the last one.
 
      BRYNAME == /dev/null
-     CLMNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_clm_160614.nc
+     CLMNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_clm_160616.nc
 
 ! Input forcing NetCDF file name(s).  The USER has the option to enter
 ! several file names for each nested grid.  For example, the USER may

@@ -5,6 +5,8 @@ import os
 case_name = os.environ['CASE_NAME']
 r_num = os.environ['R_NUM']
 d_ntimes = os.environ['D_NTIMES']
+h_ntimes = os.environ['H_NTIMES']
+i_ntimes = os.environ['I_NTIMES']
 dt = os.environ['DT']
 r_dat = os.environ['ROMS_DAT_DIR']
 w_dir = os.environ['WORK_DIR']
@@ -18,6 +20,8 @@ for line in fi0:
   line = line.replace('${CASE_NAME}'   ,case_name)
   line = line.replace('${R_NUM}'       ,r_num)
   line = line.replace('${D_NTIMES}'    ,d_ntimes)
+  line = line.replace('${H_NTIMES}'    ,h_ntimes)
+  line = line.replace('${I_NTIMES}'    ,i_ntimes)
   line = line.replace('${DT}'          ,dt)
   line = line.replace('${ROMS_DAT_DIR}',r_dat)
   line = line.replace('${WORK_DIR}'    ,w_dir)
