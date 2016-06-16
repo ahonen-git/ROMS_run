@@ -4,6 +4,10 @@ ROMS_run provides scripts required for running ROMS.
 
 This master branch is to run the model in inx.
 
+## Requirements
+- gnu-sed (homebrew)
+- libmpc (homebrew)
+
 ## Procedure to run ROMS
 
 ### 1. Configure ROMS
