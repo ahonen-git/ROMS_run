@@ -13,48 +13,75 @@
 **                     bioFennel.in, ecosim.in, npzd_Franks.in, npzd_Powell.in
 */
 
-#define UV_ADV
-#undef  UV_SADVECTION
-#define UV_C4ADVECTION
-#define UV_COR
-#define UV_QDRAG
-#define DJ_GRADPS
-#undef  TS_U3HADVECTION
-#define TS_A4HADVECTION
-#define TS_C4VADVECTION
-#define SOLAR_SOURCE
-#define NONLIN_EOS
-#define SALINITY
-#undef  SPLINES
+#define ANA_BPFLUX
+#define ANA_BSFLUX
+#define ANA_BTFLUX
+#define ANA_SSFLUX
+#define ASSUMED_SHAPE
 #define AVERAGES
+#define CURVEGRID
+#define DIFF_GRID
+#define DJ_GRADPS
+#define DOUBLE_PRECISION
+#undef  MASKING
+#define MIX_GEO_TS
+#define MIX_S_UV
+#undef  MPI
+#define NONLINEAR
+#define NONLIN_EOS
+#define NO_LBC_ATT
+#define NO_WRITE_GRID
+#define POWER_LAW
+#define PROFILE
+#undef  QCORRECTION
+#define RADIATION_2D
+#undef  RST_SINGLE
+#define SALINITY
+#undef  SCORRECTION
+#define SOLAR_SOURCE
 #define SOLVE3D
-#define QUADRATIC
+#define SPLINES
+#define SPHERICAL
+#define SPONGE
+#undef  STATIONS
+#define TS_A4HADVECTION
+#define TS_A4VADVECTION
+#define TS_DIF2
+#define UV_ADV
+#define UV_COR
+#define UV_C4ADVECTION
+#define UV_QDRAG
+#define UV_VIS4
+#define VAR_RHO_2D
+#define VISC_GRID
 
-#define LMD_MIXING
-#ifdef LMD_MIXING
-# define LMD_RIMIX
-# define LMD_CONVEC
-# define LMD_DDMIX
-# define LMD_SKPP
-# define LMD_NONLOCAL
-#endif
+#undef  Q_PSOURCE
+#undef  Q_TONLY
+#undef  TS_PSOURCE
 
 #define BULK_FLUXES
 #ifdef BULK_FLUXES
-# undef EMINUSP
-# define ANA_SSFLUX
-# undef  LONGWAVE
+# define ATM_PRESS
+# define EMINUSP
 # define LONGWAVE_OUT
 #else
 # define ANA_SMFLUX
 # define ANA_STFLUX
 #endif
 
-#define ANA_BSFLUX
-#define ANA_BTFLUX
+#define LMD_MIXING
+#ifdef LMD_MIXING
+# define LMD_CONVEC
+# define LMD_DDMIX
+# define LMD_MIXING
+# define LMD_NONLOCAL
+# define LMD_RIMIX
+# define LMD_SHAPIRO
+# define LMD_SKPP
+#endif
 
-#define TCLIMATOLOGY
-#define TCLM_NUDGING
+#undef TCLIMATOLOGY
+#undef TCLM_NUDGING
 
 /*
 **  Biological model options.

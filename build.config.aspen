@@ -10,10 +10,10 @@ export FORT=gfortran
 export USE_SLATEC=on
 export SLATEC_LIBDIR=/Users/misumi/lib
 
-export D_NTIMES=1440
-export DT=60
-export H_NTIMES=1
-export I_NTIMES=1
+export D_NTIMES=87660
+export DT=3600
+export H_NTIMES=240
+export I_NTIMES=240
 
 if [ "${OPT_PARALLEL}" = "on" ]; then
   export PGM=oceanM

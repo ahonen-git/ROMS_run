@@ -624,7 +624,7 @@ Aout(idDano) == F       ! rho                density anomaly
 Aout(idVvis) == F       ! AKv                vertical viscosity
 Aout(idTdif) == F       ! AKt                vertical T-diffusion
 Aout(idSdif) == F       ! AKs                vertical Salinity diffusion
-Aout(idHsbl) == F       ! Hsbl               depth of surface boundary layer
+Aout(idHsbl) == T       ! Hsbl               depth of surface boundary layer
 Aout(idHbbl) == F       ! Hbbl               depth of bottom boundary layer
 
 Aout(id2dRV) == F       ! pvorticity_bar     2D relative vorticity
@@ -761,7 +761,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
      NFFILES == 2                          ! number of unique forcing files
 
-     FRCNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_frc_nowind_160614.nc   \
+     FRCNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_frc_160614.nc   \
                 ${ROMS_DAT_DIR}/v1d_coag/v1d_sflux_160614.nc
 
 ! Output NetCDF file names, [1:Ngrids].
