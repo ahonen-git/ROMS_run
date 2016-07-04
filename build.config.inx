@@ -4,10 +4,10 @@ export HOME_DIR=${PWD}
 export WORK_DIR=/wrk/misumi/roms_out/${CASE_NAME}
 export ROMS_SRC_DIR=/wrk/misumi/roms_src/ROMS-BEC/devel
 export ROMS_DAT_DIR=/wrk/misumi/roms_data
-export OPT_PARALLEL=on
+export OPT_PARALLEL=
 export D_CODE=160099
-export QUE=xs
-export N_NODES=2
+export QUE=xa
+export N_NODES=1
 export N_CPUS=1
 export N_MPIP=1
 export WALL_TIME=12:00:00
@@ -17,10 +17,12 @@ export FORT=ifort
 export USE_SLATEC=on
 export SLATEC_LIBDIR=/home/misumi/lib
 
-export P_JOB=""
+export P_JOB=
 
-export D_NTIMES=525960
+export D_NTIMES=52596
 export DT=600
+export H_NTIMES=144
+export I_NTIMES=144
 
 if [ "${OPT_PARALLEL}" = "on" ]; then
   export PGM=oceanM

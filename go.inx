@@ -17,7 +17,6 @@ cd ${WORK_DIR}
 mpijob ${WORK_DIR}/bin/${PGM} ${HOME_DIR}/${name}.in > ${WORK_DIR}/log/c.${name}
 
 cp ${HOME_DIR}/${name}.in ${WORK_DIR}/in
-mv ${WORK_DIR}/*.nc       ${WORK_DIR}/out
 
 EOF
 }
@@ -40,7 +39,49 @@ cd ${WORK_DIR}
 mpijob ${WORK_DIR}/bin/${PGM} ${HOME_DIR}/${name}.in > ${WORK_DIR}/log/c.${name}
 
 cp ${HOME_DIR}/${name}.in ${WORK_DIR}/in
-mv ${WORK_DIR}/*.nc       ${WORK_DIR}/out
+
+EOF
+}
+
+function s0_submit(){
+qsub <<EOF
+#PBS -P ${D_CODE}
+#PBS -q ${QUE}
+#PBS -l select=${N_NODES}:ncpus=${N_CPUS}:mem=100mb:mpiprocs=${N_MPIP}
+#PBS -l walltime=${WALL_TIME}
+#PBS -N ${JOB_NAME}_${R_NUM}
+#PBS -o ${WORK_DIR}/log/o.${name}
+#PBS -e ${WORK_DIR}/log/e.${name}
+#PBS -W umask=022
+#PBS -V
+
+cd ${WORK_DIR}
+
+${WORK_DIR}/bin/${PGM} < ${HOME_DIR}/${name}.in > ${WORK_DIR}/log/c.${name}
+
+cp ${HOME_DIR}/${name}.in ${WORK_DIR}/in
+
+EOF
+}
+
+function s1_submit(){
+qsub <<EOF
+#PBS -P ${D_CODE}
+#PBS -q ${QUE}
+#PBS -l select=${N_NODES}:ncpus=${N_CPUS}:mem=100mb:mpiprocs=${N_MPIP}
+#PBS -l walltime=${WALL_TIME}
+#PBS -N ${JOB_NAME}_${R_NUM}
+#PBS -o ${WORK_DIR}/log/o.${name}
+#PBS -e ${WORK_DIR}/log/e.${name}
+#PBS -W umask=022
+#PBS -W depend=afterok:${P_JOB}
+#PBS -V
+
+cd ${WORK_DIR}
+
+${WORK_DIR}/bin/${PGM} < ${HOME_DIR}/${name}.in > ${WORK_DIR}/log/c.${name}
+
+cp ${HOME_DIR}/${name}.in ${WORK_DIR}/in
 
 EOF
 }
@@ -59,8 +100,15 @@ if [ ${P_JOB:-UNDEF} = "UNDEF" ]; then
     exit 0
   fi
   cp -r External ${WORK_DIR}
-
-  q0_submit
+  if [ "${OPT_PARALLEL}" = "on" ]; then
+    q0_submit
+  else
+    s0_submit
+  fi
 else
-  q1_submit
+  if [ "${OPT_PARALLEL}" = "on" ]; then
+    q1_submit
+  else
+    s1_submit
+  fi
 fi
