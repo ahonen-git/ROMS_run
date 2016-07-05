@@ -8,9 +8,9 @@ def error_exit(msg):
   print "Error: "+msg
   sys.exit()
 
-def mod_ini(line,rst):
+def mod_file(line,file):
   x = line.split("==")
-  x[1] = " "+rst
+  x[1] = " "+file
   line = "==".join(x)
   line = line + "\n"
   return line
@@ -38,7 +38,10 @@ p_num = p_num.zfill(3)
 d_ntimes = os.environ['D_NTIMES']
 dt = os.environ['DT']
 
-rstfile = os.environ['WORK_DIR'] + "/out/" + case_name + ".r." + p_num + ".nc"
+inifile = os.environ['WORK_DIR'] + "/out/" + case_name + ".r." + p_num + ".nc"
+rstfile = os.environ['WORK_DIR'] + "/out/" + case_name + ".r." + r_num + ".nc"
+hstfile = os.environ['WORK_DIR'] + "/out/" + case_name + ".h." + r_num + ".nc"
+avgfile = os.environ['WORK_DIR'] + "/out/" + case_name + ".a." + r_num + ".nc"
 
 infile =case_name+'_'+p_num+'.in'
 outfile=case_name+'_'+r_num+'.in'
@@ -56,13 +59,13 @@ fo0 = open(outfile,'w')
 for line in fi0:
   if not re.match(r'^!',line):
     if   re.match(r'^\s*ININAME\s*==',line):
-      line = mod_ini(line, rstfile)
+      line = mod_file(line, inifile)
     elif re.match(r'^\s*RSTNAME\s*==',line):
-      line = line.replace(p_num,r_num)
+      line = mod_file(line, rstfile)
     elif re.match(r'^\s*HISNAME\s*==',line):
-      line = line.replace(p_num,r_num)
+      line = mod_file(line, hstfile)
     elif re.match(r'^\s*AVGNAME\s*==',line):
-      line = line.replace(p_num,r_num)
+      line = mod_file(line, avgfile)
     elif re.match(r'^\s*NTIMES\s*==',line):
       line = mod_ntimes(line, d_ntimes)
     elif re.match(r'^\s*DT\s*==',line):
