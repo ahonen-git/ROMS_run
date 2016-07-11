@@ -84,24 +84,24 @@
 ! Harmonic/biharmonic horizontal diffusion of biological tracer for
 ! nonlinear model and adjoint-based algorithms: [1:NBT,Ngrids].
 
-         TNU2 == 24*0.0d0                         ! m2/s
-         TNU4 == 24*0.0d0                         ! m4/s
+         TNU2 == 27*0.0d0                         ! m2/s
+         TNU4 == 27*0.0d0                         ! m4/s
 
-      ad_TNU2 == 24*0.0d0                         ! m2/s
-      ad_TNU4 == 24*0.0d0                         ! m4/s
+      ad_TNU2 == 27*0.0d0                         ! m2/s
+      ad_TNU4 == 27*0.0d0                         ! m4/s
 
 ! Vertical mixing coefficients for biological tracers for nonlinear
 ! model and basic state scale factor in adjoint-based algorithms:
 ! [1:NBT,Ngrids].
 
-      AKT_BAK == 24*0.0d0                         ! m2/s
+      AKT_BAK == 27*0.0d0                         ! m2/s
 
-   ad_AKT_fac == 24*0.0d0                         ! nondimensional
+   ad_AKT_fac == 27*0.0d0                         ! nondimensional
 
 ! Nudging/relaxation time scales, inverse scales will be computed
 ! internally: [1:NBT,Ngrids].
 
-        TNUDG == 24*0.0d0                         ! days
+        TNUDG == 27*0.0d0                         ! days
 
 ! Set lateral boundary conditions keyword. Notice that a value is expected
 ! for each boundary segment per nested grid for each state variable.
@@ -149,38 +149,44 @@ ad_LBC(isTvar) ==   Per     Per     Per     Per      ! idbio(:), compact
 ! tracers climatology: [NBT,Ngrids] values are expected. See glossary below
 ! for details.
 
-  LtracerCLM == 24*F
+  LtracerCLM == 27*F
+
+! Logical switches (TRUE/FALSE) to specify which variables to process for
+! tracers 3d influx: [NBT,Ngrids] values are expected. See glossary below
+! for details.
+
+  LtracerFLX == F F F F T F F F F F F F F F F F F F F F F F F F F F F
 
 ! Logical switches (TRUE/FALSE) to specify which variables to consider on
 ! tracers point Sources/Sinks (like river runoff): [NBT,Ngrids] values are
 ! expected. See glossary below for details.
 
-  LtracerSrc == 24*F
+  LtracerSrc == 27*F
 
 ! Logical switches (TRUE/FALSE) to activate writing of biological fields
 ! into HISTORY output files: [1:NBT,Ngrids].
 
-Hout(idTvar) == 24*T     ! PO4, ...                biological tracer
+Hout(idTvar) == 27*T     ! PO4, ...                biological tracer
 
 ! Logical switches (TRUE/FALSE) to activate writing of time-averaged fields
 ! into AVERAGE output file: [1:NBT,Ngrids].
 
-Aout(idTvar) == 24*T     ! PO4, ...                biological tracer
+Aout(idTvar) == 27*T     ! PO4, ...                biological tracer
 
 ! Logical switches (TRUE/FALSE) to activate writing of time-averaged,
 ! biological tracer diagnostic terms into DIAGNOSTIC output file:
 ! [1:NBT,Ngrids].
 
-Dout(iTrate) == 24*T     ! NO3_rate, ...           time rate of change
-Dout(iThadv) == 24*T     ! NO3_hadv, ...           horizontal total advection
-Dout(iTxadv) == 24*T     ! NO3_xadv, ...           horizontal XI-advection
-Dout(iTyadv) == 24*T     ! NO3_yadv, ...           horizontal ETA-advection
-Dout(iTvadv) == 24*T     ! NO3_vadv, ...           vertical advection
-Dout(iThdif) == 24*T     ! NO3_hdiff, ...          horizontal total diffusion
-Dout(iTxdif) == 24*T     ! NO3_xdiff, ...          horizontal XI-diffusion
-Dout(iTydif) == 24*T     ! NO3_ydiff, ...          horizontal ETA-diffusion
-Dout(iTsdif) == 24*T     ! NO3_sdiff, ...          horizontal S-diffusion
-Dout(iTvdif) == 24*T     ! NO3_vdiff, ...          vertical diffusion
+Dout(iTrate) == 27*T     ! NO3_rate, ...           time rate of change
+Dout(iThadv) == 27*T     ! NO3_hadv, ...           horizontal total advection
+Dout(iTxadv) == 27*T     ! NO3_xadv, ...           horizontal XI-advection
+Dout(iTyadv) == 27*T     ! NO3_yadv, ...           horizontal ETA-advection
+Dout(iTvadv) == 27*T     ! NO3_vadv, ...           vertical advection
+Dout(iThdif) == 27*T     ! NO3_hdiff, ...          horizontal total diffusion
+Dout(iTxdif) == 27*T     ! NO3_xdiff, ...          horizontal XI-diffusion
+Dout(iTydif) == 27*T     ! NO3_ydiff, ...          horizontal ETA-diffusion
+Dout(iTsdif) == 27*T     ! NO3_sdiff, ...          horizontal S-diffusion
+Dout(iTvdif) == 27*T     ! NO3_vdiff, ...          vertical diffusion
 
 !
 !  GLOSSARY:
