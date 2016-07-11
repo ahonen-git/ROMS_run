@@ -55,7 +55,7 @@
      BioIni(no3_ind)      == 30.0d0           ! dissolved inorganic nitrate
      BioIni(sio3_ind)     == 30.0d0           ! dissolved inorganic silicate
      BioIni(nh4_ind)      == 30.0d0           ! dissolved ammonia
-     BioIni(fe_ind)       == 30.0d0           ! dissolved inorganic iron   
+     BioIni(fe_ind)       == 30.0d0           ! dissolved inorganic iron
      BioIni(o2_ind)       == 30.0d0           ! dissolved oxygen
      BioIni(dic_ind)      == 30.0d0           ! dissolved inorganic carbon
      BioIni(alk_ind)      == 30.0d0           ! alkalinity
@@ -74,7 +74,7 @@
      BioIni(diazFe_ind)   == 30.0d0           ! diazotroph iron
      BioIni(don_ind)      == 30.0d0           ! dissolved organic nitrogen
      BioIni(dofe_ind)     == 30.0d0           ! dissolved organic iron
-     BioIni(dop_ind)      == 30.0d0           ! dissolved organic phosphorus 
+     BioIni(dop_ind)      == 30.0d0           ! dissolved organic phosphorus
 
 ! Fraction of shortwave radiation that is photosynthetically active
 ! (nondimensional), {0.43d0}.
@@ -153,7 +153,8 @@ ad_LBC(isTvar) ==   Per     Per     Per     Per      ! idbio(:), compact
 
 ! Logical switches (TRUE/FALSE) to specify which variables to process for
 ! tracers 3d influx: [NBT,Ngrids] values are expected. See glossary below
-! for details.
+! for details. Need to turn on TINFLUX in the header file. The fifth variable
+! is Fe.
 
   LtracerFLX == F F F F T F F F F F F F F F F F F F F F F F F F F F F
 
