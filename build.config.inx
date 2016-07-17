@@ -2,7 +2,7 @@ export CASE_NAME=`echo ${PWD##*/}`
 export JOB_NAME="xxx"
 export HOME_DIR=${PWD}
 export WORK_DIR=/wrk/misumi/roms_out/${CASE_NAME}
-export ROMS_SRC_DIR=/wrk/misumi/roms_src/ROMS-BEC/devel
+export ROMS_SRC_DIR=/wrk/misumi/roms_src/ROMS-BEC
 export ROMS_DAT_DIR=/wrk/misumi/roms_data
 export OPT_PARALLEL=
 export D_CODE=160099
@@ -11,18 +11,19 @@ export N_NODES=1
 export N_CPUS=1
 export N_MPIP=1
 export WALL_TIME=12:00:00
-export R_NUM=001
+export R_NUM=006
 export FORT=ifort
 
 export USE_SLATEC=on
 export SLATEC_LIBDIR=/home/misumi/lib
 
-export P_JOB=
+export P_JOB=1230182
 
-export D_NTIMES=52596
+export NTIMES=52596
 export DT=600
-export H_NTIMES=144
-export I_NTIMES=144
+export H_NTIMES=4383
+export I_NTIMES=4383
+export D_DSTART=365.25
 
 if [ "${OPT_PARALLEL}" = "on" ]; then
   export PGM=oceanM

@@ -184,7 +184,7 @@ ad_VolCons(north) ==  F                            ! northern boundary
 
 ! Time-Stepping parameters.
 
-      NTIMES == ${D_NTIMES}
+      NTIMES == ${NTIMES}
           DT == ${DT}
      NDTFAST == 30
 
@@ -352,7 +352,7 @@ ad_VolCons(north) ==  F                            ! northern boundary
 ! origin for tidal forcing, and model reference time for output
 ! NetCDF units attribute.
 
-      DSTART =  0.0d0                      ! days
+      DSTART =  ${D_DSTART}                ! days
   TIDE_START =  0.0d0                      ! days
     TIME_REF =  0.0d0                      ! yyyymmdd.dd
 
