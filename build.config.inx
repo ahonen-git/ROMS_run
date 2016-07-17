@@ -11,13 +11,13 @@ export N_NODES=1
 export N_CPUS=1
 export N_MPIP=1
 export WALL_TIME=12:00:00
-export R_NUM=006
+export R_NUM=001
 export FORT=ifort
 
 export USE_SLATEC=on
 export SLATEC_LIBDIR=/home/misumi/lib
 
-export P_JOB=1230182
+export P_JOB=
 
 export NTIMES=52596
 export DT=600
