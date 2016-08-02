@@ -205,7 +205,7 @@ ad_VolCons(north) ==  F                            ! northern boundary
 
 ! Input/Output parameters.
 
-       NRREC == 0
+       NRREC == -1
    LcycleRST == T
         NRST == ${H_NTIMES}
         NSTA == 1
