@@ -74,7 +74,7 @@
 ! Input variable information file name.  This file needs to be processed
 ! first so all information arrays can be initialized properly.
 
-     VARNAME = External/varinfo_160629.dat
+     VARNAME = External/varinfo.dat
 
 ! Number of nested grids.
 
@@ -386,6 +386,11 @@ ad_VolCons(north) ==  F                            ! northern boundary
 ! tracers climatology: [1:NAT+NPT,Ngrids]. See glossary below for details.
 
   LtracerCLM == T T                        ! temperature, salinity, inert
+
+! Logical switches (TRUE/FALSE) to specify which variables to process for
+! tracers 3d influx: [1:NAT+NPT,Ngrids]. See glossary below for details.
+
+  LtracerFLX == F F                        ! temperature, salinity, inert
 
 ! Logical switches (TRUE/FALSE) to specify which variables to consider on
 ! tracers point Sources/Sinks (like river runoff): [1:NAT+NPT,Ngrids].
@@ -745,7 +750,8 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! except the last one.
 
      BRYNAME == /dev/null
-     CLMNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_clm_160616.nc
+     CLMNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_clm_160629.nc
+     FLXNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_flx_160701.nc
 
 ! Input forcing NetCDF file name(s).  The USER has the option to enter
 ! several file names for each nested grid.  For example, the USER may

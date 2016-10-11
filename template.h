@@ -55,6 +55,8 @@
 #define VAR_RHO_2D
 #define VISC_GRID
 
+#define TINFLUX
+
 #undef  Q_PSOURCE
 #undef  Q_TONLY
 #undef  TS_PSOURCE
