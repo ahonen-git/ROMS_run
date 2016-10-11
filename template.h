@@ -40,7 +40,7 @@
 #undef  SCORRECTION
 #define SOLAR_SOURCE
 #define SOLVE3D
-#define SPLINES
+#undef  SPLINES
 #define SPHERICAL
 #define SPONGE
 #undef  STATIONS
@@ -54,8 +54,6 @@
 #define UV_VIS4
 #define VAR_RHO_2D
 #define VISC_GRID
-
-#define TINFLUX
 
 #undef  Q_PSOURCE
 #undef  Q_TONLY
@@ -82,8 +80,9 @@
 # define LMD_SKPP
 #endif
 
-#undef TCLIMATOLOGY
-#undef TCLM_NUDGING
+#undef  TINFLUX
+#undef  TCLIMATOLOGY
+#undef  TCLM_NUDGING
 
 /*
 **  Biological model options.
