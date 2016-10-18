@@ -19,7 +19,7 @@ export SLATEC_LIBDIR=/home/misumi/lib
 
 export P_JOB=
 
-export NTIMES=52596
+export D_NTIMES=52596
 export DT=600
 export H_NTIMES=4383
 export I_NTIMES=4383
