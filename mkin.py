@@ -4,7 +4,7 @@ import os
 
 case_name = os.environ['CASE_NAME']
 r_num     = os.environ['R_NUM']
-ntimes    = os.environ['NTIMES']
+ntimes    = os.environ['D_NTIMES']
 h_ntimes  = os.environ['H_NTIMES']
 i_ntimes  = os.environ['I_NTIMES']
 dt        = os.environ['DT']
