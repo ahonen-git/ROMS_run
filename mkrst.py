@@ -42,7 +42,7 @@ r_num = os.environ['R_NUM']
 p_num = int(r_num)-1
 p_num = str(p_num)
 p_num = p_num.zfill(3)
-ntimes = os.environ['NTIMES']
+ntimes = os.environ['D_NTIMES']
 dt = os.environ['DT']
 d_dstart = os.environ['D_DSTART']
 
@@ -81,6 +81,8 @@ for line in fi0:
       line = mod_dt(line, dt)
     elif re.match(r'^\s*DSTART\s*=',line):
       line = mod_dstart(line, d_dstart)
+    elif re.match(r'^\s*NRREC\s*==',line):
+      line = mod_file(line, "-1")
   fo0.write(line)
   
 fi0.close()
