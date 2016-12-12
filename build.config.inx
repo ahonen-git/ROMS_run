@@ -10,6 +10,7 @@ export QUE=xa
 export N_NODES=1
 export N_CPUS=1
 export N_MPIP=1
+export N_MEM=1gb
 export WALL_TIME=12:00:00
 export R_NUM=001
 export FORT=ifort
@@ -78,6 +79,7 @@ echo "QUE         : $QUE"
 echo "N_NODES     : $N_NODES"
 echo "N_CPUS      : $N_CPUS"
 echo "N_PES       : $N_PES"
+echo "N_MEM       : $N_MEM"
 echo "WALL_TIME   : $WALL_TIME"
 echo "R_NUM       : $R_NUM"
 echo
