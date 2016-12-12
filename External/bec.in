@@ -164,6 +164,10 @@ ad_LBC(isTvar) ==   Per     Per     Per     Per      ! idbio(:), compact
 
   LtracerSrc == 27*F
 
+! 3D ligands
+
+  LIGNAME == /Users/misumi/roms_data/v1d_coag/v1d_lig_161212.nc
+
 ! Logical switches (TRUE/FALSE) to activate writing of biological fields
 ! into HISTORY output files: [1:NBT,Ngrids].
 

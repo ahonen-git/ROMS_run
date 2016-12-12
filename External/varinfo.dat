@@ -9433,3 +9433,18 @@
   'r3dvar'
   1.0d0
 
+!
+!------------------------------------------------------------------------------
+!  organic ligands
+!------------------------------------------------------------------------------
+!
+
+'ligand'                                            ! Input/Output
+  'iron-binding ligands'
+  'mmol/m3'
+  'ligand, scalar, series'
+  'ocean_time'
+  'idTlig'
+  'r3dvar'
+  1.0d0
+
