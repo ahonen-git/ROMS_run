@@ -1,0 +1,14 @@
+#!/bin/sh
+
+debug=
+
+if [ ! -d trash ]; then
+ mkdir trash
+fi
+
+rm -rf trash/*
+
+$debug mv $CASE_NAME.h trash
+$debug mv $CASE_NAME\_???.in trash
+$debug mv $PGM trash
+$debug mv Build trash
