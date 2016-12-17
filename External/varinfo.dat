@@ -9394,29 +9394,6 @@
   'nulvar'
   1.0d0
 
-!
-!------------------------------------------------------------------------------
-!  Nudging time
-!------------------------------------------------------------------------------
-!
-
-'temp_nudge'                                       ! Input/Output
-  'potential temperature nudging time'
-  'day-1'
-  'temperature, scalar, series'
-  'ocean_time'
-  'idTnud(itemp)'
-  'r3dvar'
-  1.0d0
-
-'salt_nudge'                                       ! Input/Output
-  'salinity nudging time'
-  'day-1'
-  'salinity, scalar, series'
-  'ocean_time'
-  'idTnud(isalt)'
-  'r3dvar'
-  1.0d0
 
 !
 !------------------------------------------------------------------------------
