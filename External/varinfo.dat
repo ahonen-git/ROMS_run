@@ -9405,7 +9405,7 @@
   'Fe flux from sediments'
   'umol m-2 day-1'
   'fesed, scalar, series'
-  'ocean_time'
+  'Fe_time'
   'idTflx(fe_ind)'
   'r3dvar'
   1.0d0
@@ -9420,7 +9420,7 @@
   'iron-binding ligands'
   'mmol/m3'
   'ligand, scalar, series'
-  'ocean_time'
+  'ligand_time'
   'idTlig'
   'r3dvar'
   1.0d0
