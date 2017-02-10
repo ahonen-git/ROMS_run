@@ -172,6 +172,10 @@ ad_LBC(isTvar) ==   Per     Per     Per     Per      ! idbio(:), compact
 
   DICENAME == /Users/misumi/roms_data/v1d_l045/v1d_l045.ssmi.170104.nc
 
+! Dust
+
+  DUSTNAME == /Users/misumi/roms_data/v1d_coag/v1d_dust_170209.nc
+
 ! Logical switches (TRUE/FALSE) to activate writing of biological fields
 ! into HISTORY output files: [1:NBT,Ngrids].
 
