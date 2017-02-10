@@ -94,7 +94,7 @@ GridsInLayer =  1
 
           Lm == 4             ! Number of I-direction INTERIOR RHO-points
           Mm == 4             ! Number of J-direction INTERIOR RHO-points
-           N == 20            ! Number of vertical levels
+           N == 45            ! Number of vertical levels
 
         Nbed =  0             ! Number of sediment bed layers
 
@@ -341,7 +341,7 @@ ad_VolCons(north) ==  F                            ! northern boundary
 
      THETA_S == 8.0d0                      ! surface stretching parameter
      THETA_B == 0.125d0                      ! bottom  stretching parameter
-      TCLINE == 150.0d0                     ! critical depth (m)
+      TCLINE == 400.0d0                     ! critical depth (m)
 
 ! Mean Density and Brunt-Vaisala frequency.
 
@@ -726,8 +726,8 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
 ! Input NetCDF file names, [1:Ngrids].
 
-     GRDNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_grd_160614.nc
-     ININAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_ini_160616.nc
+     GRDNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.grd.161221.nc
+     ININAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.ini.161221.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_npzd.nc
@@ -750,8 +750,8 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! except the last one.
 
      BRYNAME == /dev/null
-     CLMNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_clm_160629.nc
-     FLXNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_flx_161006.nc
+     CLMNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.clm.161221.nc
+     FLXNAME == /dev/null
 
 ! Input forcing NetCDF file name(s).  The USER has the option to enter
 ! several file names for each nested grid.  For example, the USER may
@@ -767,8 +767,8 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
      NFFILES == 2                          ! number of unique forcing files
 
-     FRCNAME == ${ROMS_DAT_DIR}/v1d_coag/v1d_frc_160614.nc   \
-                ${ROMS_DAT_DIR}/v1d_coag/v1d_sflux_160614.nc
+     FRCNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.frc.161221.nc   \
+                ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.sflux.161221.nc
 
 ! Output NetCDF file names, [1:Ngrids].
 

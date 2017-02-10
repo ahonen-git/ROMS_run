@@ -149,7 +149,7 @@ ad_LBC(isTvar) ==   Per     Per     Per     Per      ! idbio(:), compact
 ! tracers climatology: [NBT,Ngrids] values are expected. See glossary below
 ! for details.
 
-  LtracerCLM == 27*F
+  LtracerCLM == T T T F F T F F F F F F F F F F F F F F F F F F F F F
 
 ! Logical switches (TRUE/FALSE) to specify which variables to process for
 ! tracers 3d influx: [NBT,Ngrids] values are expected. See glossary below
@@ -174,7 +174,7 @@ ad_LBC(isTvar) ==   Per     Per     Per     Per      ! idbio(:), compact
 
 ! Dust
 
-  DUSTNAME == /Users/misumi/roms_data/v1d_coag/v1d_dust_170209.nc
+  DUSTNAME == /Users/misumi/roms_data/v1d_coag/v1d_l045.dust.170209.nc
 
 ! Logical switches (TRUE/FALSE) to activate writing of biological fields
 ! into HISTORY output files: [1:NBT,Ngrids].
