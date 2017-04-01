@@ -201,6 +201,9 @@ Dout(iTydif) == 27*T     ! NO3_ydiff, ...          horizontal ETA-diffusion
 Dout(iTsdif) == 27*T     ! NO3_sdiff, ...          horizontal S-diffusion
 Dout(iTvdif) == 27*T     ! NO3_vdiff, ...          vertical diffusion
 
+! Diagnostics for BEC
+Dout(iphotoC_sp) == T
+
 !
 !  GLOSSARY:
 !  =========
