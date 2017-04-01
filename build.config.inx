@@ -52,7 +52,7 @@ if [ ! -e ${WORK_DIR}/out ]; then
   mkdir -p ${WORK_DIR}/out
 fi
 
-export CASE_NAME=`echo $CASE_NAME | sed -e 's/\./\_/g' | sed -e 's/\(.*\)/\L\1/'`
+#export CASE_NAME=`echo $CASE_NAME | sed -e 's/\./\_/g' | sed -e 's/\(.*\)/\L\1/'`
 
 if [ ! -e $CASE_NAME.h ]; then
   echo "Copying HEADER file from templete."
