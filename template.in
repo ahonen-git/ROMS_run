@@ -779,7 +779,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
      TLFNAME == ocean_tlf.nc
      ADJNAME == ocean_adj.nc
      AVGNAME == ${WORK_DIR}/out/${CASE_NAME}.a.${R_NUM}.nc
-     DIANAME == ocean_dia.nc
+     DIANAME == ${WORK_DIR}/out/${CASE_NAME}.d.${R_NUM}.nc
      STANAME == ocean_sta.nc
      FLTNAME == ocean_flt.nc
 
