@@ -9469,3 +9469,12 @@
   'iDbio3(iphotoC_sp)'
   'r3dvar'
   1.0d0
+
+'photoC_diaz'                                            ! Input/Output
+  'photoC_diaz'
+  'units'
+  'photoC_diaz, scalar, series'
+  'ocean_time'
+  'iDbio3(iphotoC_diaz)'
+  'r3dvar'
+  1.0d0
