@@ -8,7 +8,11 @@ fi
 
 rm -rf trash/*
 
-$debug mv $CASE_NAME.h trash
-$debug mv $CASE_NAME\_???.in trash
-$debug mv $PGM trash
-$debug mv Build trash
+set $CASE_NAME.h $CASE_NAME\_???.in $PGM Build
+while [ $# -gt 0 ]
+do
+  if [ -e $1 ]; then
+    $debug mv -f $1 trash
+  fi
+  shift
+done
