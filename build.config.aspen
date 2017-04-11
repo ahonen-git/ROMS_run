@@ -1,4 +1,5 @@
 export CASE_NAME=`echo ${PWD##*/}`
+export CASE_NAME=`echo $CASE_NAME | gsed -e 's/\(.*\)/\L\1/'`
 export HOME_DIR=${PWD}
 export WORK_DIR=/Users/misumi/roms_out/${CASE_NAME}
 export ROMS_SRC_DIR=/Users/misumi/tower/ROMS-BEC
@@ -10,11 +11,11 @@ export FORT=gfortran
 export USE_SLATEC=
 export SLATEC_LIBDIR=/Users/misumi/lib
 
-export D_NTIMES=86400
+export D_NTIMES=8640
 export DT=3600
 export H_NTIMES=24
 export I_NTIMES=24
-export D_DSTART=3600
+export D_DSTART=360
 
 if [ "${OPT_PARALLEL}" = "on" ]; then
   export PGM=oceanM
@@ -44,9 +45,9 @@ fi
 
 #export CASE_NAME=`echo $CASE_NAME | gsed -e 's/\./\_/g'| gsed -e 's/\(.*\)/\L\1/'`
 
-if [ ! -e $CASE_NAME.h ]; then
+if [ ! -e $CASE_NAME_s.h ]; then
   echo "Copying HEADER file from templete."
-  cp template.h $CASE_NAME.h
+  cp template.h $CASE_NAME_s.h
 fi
 if [ ${R_NUM} = "001" ] && [ ! -e $CASE_NAME\_001.in ]; then
   echo "Making IN file from templete."

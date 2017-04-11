@@ -1,4 +1,5 @@
 export CASE_NAME=`echo ${PWD##*/}`
+export CASE_NAME=`echo $CASE_NAME | gsed -e 's/\(.*\)/\L\1/'`
 export JOB_NAME="xxx"
 export HOME_DIR=${PWD}
 export WORK_DIR=/wrk/misumi/roms_out/${CASE_NAME}

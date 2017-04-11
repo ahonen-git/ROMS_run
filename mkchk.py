@@ -9,9 +9,9 @@ def line_strip1(l,n):
   l = l[n].strip()
   l = l.split("!")
   l = l[0].strip()
-  if n == 1:
-    l = l.lower()
-    l = l.replace('d','e')
+#  if n == 1:
+#    l = l.lower()
+#    l = l.replace('d','e')
   return l
 
 def line_strip2(l,n):
@@ -20,9 +20,9 @@ def line_strip2(l,n):
   l = l[n].strip()
   l = l.split("!")
   l = l[0].strip()
-  if n == 1:
-    l = l.lower()
-    l = l.replace('d','e')
+#  if n == 1:
+#    l = l.lower()
+#    l = l.replace('d','e')
   return l
 
 def conv_exp(val):
