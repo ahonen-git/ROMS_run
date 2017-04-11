@@ -73,7 +73,7 @@
 #ifdef LMD_MIXING
 # define LMD_CONVEC
 # define LMD_DDMIX
-# define LMD_MIXING
+# define LMD_TMIX
 # define LMD_NONLOCAL
 # define LMD_RIMIX
 # define LMD_SHAPIRO
