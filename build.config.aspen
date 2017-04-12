@@ -1,5 +1,4 @@
-export CASE_NAME=`echo ${PWD##*/}`
-export CASE_NAME=`echo $CASE_NAME | gsed -e 's/\(.*\)/\L\1/'`
+export CASE_NAME=`echo ${PWD##*/} | gsed -e 's/\(.*\)/\L\1/'`
 export HOME_DIR=${PWD}
 export WORK_DIR=/Users/misumi/roms_out/${CASE_NAME}
 export ROMS_SRC_DIR=/Users/misumi/tower/ROMS-BEC
@@ -45,9 +44,9 @@ fi
 
 #export CASE_NAME=`echo $CASE_NAME | gsed -e 's/\./\_/g'| gsed -e 's/\(.*\)/\L\1/'`
 
-if [ ! -e $CASE_NAME_s.h ]; then
+if [ ! -e $CASE_NAME.h ]; then
   echo "Copying HEADER file from templete."
-  cp template.h $CASE_NAME_s.h
+  cp template.h $CASE_NAME.h
 fi
 if [ ${R_NUM} = "001" ] && [ ! -e $CASE_NAME\_001.in ]; then
   echo "Making IN file from templete."
