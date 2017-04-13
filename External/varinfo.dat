@@ -9478,18 +9478,54 @@
 
 'photoC_sp'                                            ! Input/Output
   'photoC_sp'
-  'units'
+  'mmol/m3'
   'photoC_sp, scalar, series'
   'ocean_time'
   'iDbio3(iphotoC_sp)'
   'r3dvar'
   1.0d0
 
+'photoC_diat'                                            ! Input/Output
+  'photoC_diat'
+  'mmol/m3'
+  'photoC_diat, scalar, series'
+  'ocean_time'
+  'iDbio3(iphotoC_diat)'
+  'r3dvar'
+  1.0d0
+
 'photoC_diaz'                                            ! Input/Output
   'photoC_diaz'
-  'units'
+  'mmol/m3'
   'photoC_diaz, scalar, series'
   'ocean_time'
   'iDbio3(iphotoC_diaz)'
   'r3dvar'
+  1.0d0
+
+'pCO2'                                            ! Input/Output
+  'pCO2'
+  'ppm'
+  'pCO2, scalar, series'
+  'ocean_time'
+  'iDbio2(ipCO2)'
+  'r2dvar'
+  1.0d0
+
+'pH'                                            ! Input/Output
+  'pH'
+  'ND'
+  'pH, scalar, series'
+  'ocean_time'
+  'iDbio2(ipH)'
+  'r2dvar'
+  1.0d0
+
+'CO2_flux'                                       ! Input/Output
+  'CO2_flux'
+  'kgCO2/m2/s (positive down)'
+  'CO2_flux, scalar, series'
+  'ocean_time'
+  'iDbio2(iCO2_flux)'
+  'r2dvar'
   1.0d0

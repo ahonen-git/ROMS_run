@@ -94,7 +94,7 @@
 ! model and basic state scale factor in adjoint-based algorithms:
 ! [1:NBT,Ngrids].
 
-      AKT_BAK == 27*0.0d0                         ! m2/s
+      AKT_BAK == 27*1.0d-5                        ! m2/s
 
    ad_AKT_fac == 27*0.0d0                         ! nondimensional
 
@@ -203,7 +203,11 @@ Dout(iTvdif) == 27*T     ! NO3_vdiff, ...          vertical diffusion
 
 ! Diagnostics for BEC
 Dout(iphotoC_sp)   == T
+Dout(iphotoC_diat) == T
 Dout(iphotoC_diaz) == T
+Dout(ipCO2)        == T
+Dout(ipH)          == T
+Dout(iCO2_flux)    == T
 
 !
 !  GLOSSARY:
