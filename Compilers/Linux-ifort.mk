@@ -82,7 +82,7 @@ ifdef USE_DEBUG
 #          FFLAGS += -g -check uninit -ftrapuv -traceback
            FFLAGS += -g -check all    -ftrapuv -traceback
 else
-           FFLAGS += -ip -O3
+           FFLAGS += -ip -O3 -xAVX
 endif
 
 ifdef USE_MCT
