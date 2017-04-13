@@ -354,7 +354,7 @@ ad_VolCons(north) ==  F                            ! northern boundary
 
       DSTART =  ${D_DSTART}                ! days
   TIDE_START =  0.0d0                      ! days
-    TIME_REF =  0.0d0                      ! yyyymmdd.dd
+    TIME_REF =  -1                         ! yyyymmdd.dd
 
 ! Nudging/relaxation time scales, inverse scales will be computed
 ! internally, [1:Ngrids].
@@ -727,7 +727,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! Input NetCDF file names, [1:Ngrids].
 
      GRDNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.grd.161221.nc
-     ININAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.ini.161221.nc
+     ININAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.ini.170413.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_npzd.nc
