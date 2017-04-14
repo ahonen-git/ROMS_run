@@ -51,6 +51,7 @@ inifile = os.environ['WORK_DIR'] + "/out/" + case_name + ".r." + p_num + ".nc"
 rstfile = os.environ['WORK_DIR'] + "/out/" + case_name + ".r." + r_num + ".nc"
 hstfile = os.environ['WORK_DIR'] + "/out/" + case_name + ".h." + r_num + ".nc"
 avgfile = os.environ['WORK_DIR'] + "/out/" + case_name + ".a." + r_num + ".nc"
+diafile = os.environ['WORK_DIR'] + "/out/" + case_name + ".d." + r_num + ".nc"
 
 infile =case_name+'_'+p_num+'.in'
 outfile=case_name+'_'+r_num+'.in'
@@ -73,6 +74,8 @@ for line in fi0:
       line = mod_file(line, rstfile)
     elif re.match(r'^\s*HISNAME\s*==',line):
       line = mod_file(line, hstfile)
+    elif re.match(r'^\s*DIANAME\s*==',line):
+      line = mod_file(line, diafile)
     elif re.match(r'^\s*AVGNAME\s*==',line):
       line = mod_file(line, avgfile)
     elif re.match(r'^\s*NTIMES\s*==',line):
