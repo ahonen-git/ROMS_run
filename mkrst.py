@@ -17,7 +17,7 @@ def mod_file(line,file):
 
 def mod_ntimes(line,val):
   x = line.split("==")
-  x[1] = " "+str(x[1])
+  x[1] = " "+val
   line = "==".join(x)
   line = line + "\n"
   return line
