@@ -9470,6 +9470,15 @@
   'r2dvar'
   1.0d0
 
+'tmix_topo'                                            ! Input/Output
+  'topography to calculate tmix'
+  'm'
+  'tmix_topo, scalar, series'
+  'tmix_time'
+  'idTxtp'
+  'r2dvar'
+  1.0d0
+
 !
 !------------------------------------------------------------------------------
 !  diagnostics

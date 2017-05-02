@@ -770,7 +770,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
      FRCNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.frc.161221.nc   \
                 ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.sflux.161221.nc
 
-     TMXNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.tmx.170411.nc
+     TMXNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.tmix.170502.nc
 
 ! Output NetCDF file names, [1:Ngrids].
 
