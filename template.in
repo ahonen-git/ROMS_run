@@ -726,8 +726,8 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
 ! Input NetCDF file names, [1:Ngrids].
 
-     GRDNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.grd.161221.nc
-     ININAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.ini.170413.nc
+     GRDNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.grd.161221.nc
+     ININAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.ini.170703.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_npzd.nc
@@ -750,7 +750,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! except the last one.
 
      BRYNAME == /dev/null
-     CLMNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.clm.161221.nc
+     CLMNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.clm.161221.nc
      FLXNAME == /dev/null
 
 ! Input forcing NetCDF file name(s).  The USER has the option to enter
@@ -767,10 +767,10 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
      NFFILES == 2                          ! number of unique forcing files
 
-     FRCNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.frc.161221.nc   \
-                ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.sflux.161221.nc
+     FRCNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
+                ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.sflux.170703.nc
 
-     TMXNAME == ${ROMS_DAT_DIR}/v1d_l045/v1d_l045.tmix.170502.nc
+     TMXNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.tmix.170502.nc
 
 ! Output NetCDF file names, [1:Ngrids].
 
