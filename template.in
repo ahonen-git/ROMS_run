@@ -727,7 +727,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! Input NetCDF file names, [1:Ngrids].
 
      GRDNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.grd.161221.nc
-     ININAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.ini.170703.nc
+     ININAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.ini.170705.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_npzd.nc
@@ -768,7 +768,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
      NFFILES == 2                          ! number of unique forcing files
 
      FRCNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
-                ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.sflux.170703.nc
+                ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.sflux.170705.nc
 
      TMXNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.tmix.170502.nc
 
