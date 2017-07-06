@@ -7198,7 +7198,7 @@
   'millimole meter-3'                              ! [mmol/m3]
   'Fe5, scalar, series'
   'ocean_time'
-  'idTvar(_ind)'
+  'idTvar(fe5_ind)'
   'r3dvar'
   1.0d0
 
