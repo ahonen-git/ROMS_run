@@ -96,6 +96,7 @@
 #undef  NPZD_POWELL
 #undef  BEC
 
+#undef  FE_TAG
 #undef  COAG
 
 #ifdef BIO_FENNEL
@@ -118,7 +119,7 @@
 # define ANA_BPFLUX
 #endif
 
-#if defined NPZD_FRANKS || defined NPZD_POWELL 
+#if defined NPZD_FRANKS || defined NPZD_POWELL
 # define ANA_SPFLUX
 # define ANA_BPFLUX
 #endif
