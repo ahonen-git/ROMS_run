@@ -751,7 +751,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
      BRYNAME == /dev/null
      CLMNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.clm.161221.nc
-     FLXNAME == /dev/null
+     FLXNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.fetag.170707.nc
 
 ! Input forcing NetCDF file name(s).  The USER has the option to enter
 ! several file names for each nested grid.  For example, the USER may
