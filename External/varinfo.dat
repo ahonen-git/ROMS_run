@@ -8169,6 +8169,332 @@
   'nulvar'
   1.0d0
 
+! fe7
+
+'Fe7'                                               ! Input/Output
+  'Dissolved Inorganic Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'Fe7, scalar, series'
+  'ocean_time'
+  'idTvar(fe7_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_Fe7'                                         ! Input
+  'river runoff Fe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_Fe7, scalar, series'
+  'river_time'
+  'idRtrc(fe7_ind)'
+  'nulvar'
+  1.0d0
+
+'Fe7_east'                                          ! Input
+  'inorganic iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'Fe7_east, scalar, series'
+  'Fe7_time'
+  'idTbry(ieast,fe7_ind)'
+  'nulvar'
+  1.0d0
+
+'Fe7_west'                                          ! Input
+  'inorganic iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'Fe7_west, scalar, series'
+  'Fe7_time'
+  'idTbry(iwest,fe7_ind)'
+  'nulvar'
+  1.0d0
+
+'Fe7_south'                                         ! Input
+  'inorganic iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'Fe7_south, scalar, series'
+  'Fe7_time'
+  'idTbry(isouth,fe7_ind)'
+  'nulvar'
+  1.0d0
+
+'Fe7_north'                                         ! Input
+  'inorganic iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'Fe7_north, scalar, series'
+  'Fe7_time'
+  'idTbry(inorth,fe7_ind)'
+  'nulvar'
+  1.0d0
+
+'DOFe7'                                             ! Input/Output
+  'Dissolved Organic Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'DOFe7, scalar, series'
+  'ocean_time'
+  'idTvar(dofe7_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_DOFe7'                                       ! Input
+  'river runoff DOFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_DOFe7, scalar, series'
+  'river_time'
+  'idRtrc(dofe7_ind)'
+  'nulvar'
+  1.0d0
+
+'DOFe7_east'                                        ! Input
+  'organic iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'DOFe7_east, scalar, series'
+  'DOFe7_time'
+  'idTbry(ieast,dofe7_ind)'
+  'nulvar'
+  1.0d0
+
+'DOFe7_west'                                        ! Input
+  'organic iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'DOFe7_west, scalar, series'
+  'DOFe7_time'
+  'idTbry(iwest,dofe7_ind)'
+  'nulvar'
+  1.0d0
+
+'DOFe7_south'                                       ! Input
+  'organic iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'DOFe7_south, scalar, series'
+  'DOFe7_time'
+  'idTbry(isouth,dofe7_ind)'
+  'nulvar'
+  1.0d0
+
+'DOFe7_north'                                       ! Input
+  'organic iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'DOFe7_north, scalar, series'
+  'DOFe7_time'
+  'idTbry(inorth,dofe7_ind)'
+  'nulvar'
+  1.0d0
+
+'spFe7'                                             ! Input/Output
+  'Small Phytoplankton Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'spFe7, scalar, series'
+  'ocean_time'
+  'idTvar(spFe7_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_spFe7'	                                   ! Input
+  'river runoff spFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_spFe7, scalar, series'
+  'river_time'
+  'idRtrc(spFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'spFe7_east'                                        ! Input
+  'small phytoplankton iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'spFe7_east, scalar, series'
+  'spFe7_time'
+  'idTbry(ieast,spFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'spFe7_west'                                        ! Input
+  'small phytoplankton iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'spFe7_west, scalar, series'
+  'spFe7_time'
+  'idTbry(iwest,spFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'spFe7_south'                                       ! Input
+  'small phytoplankton iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'spFe7_south, scalar, series'
+  'spFe7_time'
+  'idTbry(isouth,spFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'spFe7_north'                                       ! Input
+  'small phytoplankton iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'spFe7_north, scalar, series'
+  'spFe7_time'
+  'idTbry(inorth,spFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'diatFe7'                                           ! Input/Output
+  'Diatom Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'diatFe7, scalar, series'
+  'ocean_time'
+  'idTvar(diatFe7_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_diatFe7'                                     ! Input
+  'river runoff diatFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_diatFe7, scalar, series'
+  'river_time'
+  'idRtrc(diatFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'diatFe7_east'                                      ! Input
+  'diatom iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'diatFe7_east, scalar, series'
+  'diatFe7_time'
+  'idTbry(ieast,diatFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'diatFe7_west'                                      ! Input
+  'diatom iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'diatFe7_west, scalar, series'
+  'diatFe7_time'
+  'idTbry(iwest,diatFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'diatFe7_south'                                     ! Input
+  'diatom iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'diatFe7_south, scalar, series'
+  'diatFe7_time'
+  'idTbry(isouth,diatFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'diatFe7_north'                                     ! Input
+  'diatom iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'diatFe7_north, scalar, series'
+  'diatFe7_time'
+  'idTbry(inorth,diatFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'diazFe7'                                           ! Input/Output
+  'Diazotroph Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'diazFe7, scalar, series'
+  'ocean_time'
+  'idTvar(diazFe7_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_diazFe7'                                     ! Input
+  'river runoff diazFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_diazFe7, scalar, series'
+  'river_time'
+  'idRtrc(diazFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'diazFe7_east'                                      ! Input
+  'diazotroph iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'diazFe7_east, scalar, series'
+  'diazFe7_time'
+  'idTbry(ieast,diazFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'diazFe7_west'                                      ! Input
+  'diazotroph iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'diazFe7_west, scalar, series'
+  'diazFe7_time'
+  'idTbry(iwest,diazFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'diazFe7_south'                                     ! Input
+  'diazotroph iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'diazFe7_south, scalar, series'
+  'diazFe7_time'
+  'idTbry(isouth,diazFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'diazFe7_north'                                     ! Input
+  'diazotroph iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'diazFe7_north, scalar, series'
+  'diazFe7_time'
+  'idTbry(inorth,diazFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'zooFe7'                                           ! Input/Output
+  'Zoo Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'zooFe7, scalar, series'
+  'ocean_time'
+  'idTvar(zooFe7_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_zooFe7'                                     ! Input
+  'river runoff zooFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_zooFe7, scalar, series'
+  'river_time'
+  'idRtrc(zooFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'zooFe7_east'                                      ! Input
+  'zoo iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'zooFe7_east, scalar, series'
+  'zooFe7_time'
+  'idTbry(ieast,zooFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'zooFe7_west'                                      ! Input
+  'zoo iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'zooFe7_west, scalar, series'
+  'zooFe7_time'
+  'idTbry(iwest,zooFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'zooFe7_south'                                     ! Input
+  'zoo iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'zooFe7_south, scalar, series'
+  'zooFe7_time'
+  'idTbry(isouth,zooFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'zooFe7_north'                                     ! Input
+  'zoo iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'zooFe7_north, scalar, series'
+  'zooFe7_time'
+  'idTbry(inorth,zooFe7_ind)'
+  'nulvar'
+  1.0d0
+
 !-----------------------------------------------------------------------
 !  Define names of varialbes for BEC diagnostics
 !-----------------------------------------------------------------------
