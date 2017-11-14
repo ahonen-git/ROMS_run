@@ -65,11 +65,11 @@
 !
 ! Application title.
 
-       TITLE = ${CASE_NAME}
+       TITLE = roms_run
 
 ! C-preprocessing Flag.
 
-    MyAppCPP = ${CASE_NAME}
+    MyAppCPP = roms_run
 
 ! Input variable information file name.  This file needs to be processed
 ! first so all information arrays can be initialized properly.
@@ -184,8 +184,8 @@ ad_VolCons(north) ==  F                            ! northern boundary
 
 ! Time-Stepping parameters.
 
-      NTIMES == ${NTIMES}
-          DT == ${DT}
+      NTIMES == 720
+          DT == 3600
      NDTFAST == 30
 
 ! Model iteration loops parameters.
@@ -207,21 +207,21 @@ ad_VolCons(north) ==  F                            ! northern boundary
 
        NRREC == -1
    LcycleRST == T
-        NRST == ${H_NTIMES}
+        NRST == 1
         NSTA == 1
         NFLT == 1
-       NINFO == ${I_NTIMES}
+       NINFO == 1
 
 ! Output history, average, diagnostic files parameters.
 
      LDEFOUT == T
-        NHIS == ${H_NTIMES}
+        NHIS == 1
      NDEFHIS == 0
       NTSAVG == 1
-        NAVG == ${H_NTIMES}
+        NAVG == 1
      NDEFAVG == 0
       NTSDIA == 1
-        NDIA == ${H_NTIMES}
+        NDIA == 1
      NDEFDIA == 0
 
 ! Output tangent linear and adjoint models parameters.
@@ -352,7 +352,7 @@ ad_VolCons(north) ==  F                            ! northern boundary
 ! origin for tidal forcing, and model reference time for output
 ! NetCDF units attribute.
 
-      DSTART =  ${D_DSTART}                ! days
+      DSTART =  0.0                ! days
   TIDE_START =  0.0d0                      ! days
     TIME_REF =  -1                         ! yyyymmdd.dd
 
@@ -726,8 +726,8 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
 ! Input NetCDF file names, [1:Ngrids].
 
-     GRDNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.grd.161221.nc
-     ININAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.ini.170706.nc
+     GRDNAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.grd.161221.nc
+     ININAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.ini.170706.nc
 !tag     ININAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.ini.170413.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
@@ -751,8 +751,8 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! except the last one.
 
      BRYNAME == /dev/null
-     CLMNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.clm.161221.nc
-     FLXNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.fetag.170707.nc
+     CLMNAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.clm.161221.nc
+     FLXNAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.fetag.170707.nc
 !tag     FLXNAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.fesed.170707.nc
 
 ! Input forcing NetCDF file name(s).  The USER has the option to enter
@@ -769,24 +769,23 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
      NFFILES == 2                          ! number of unique forcing files
 
-     FRCNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
-                ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.sflux.170706.nc
+     FRCNAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
+                /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.sflux_tag.170723.nc
 !tag     FRCNAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
 !tag                /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.sflux.161221.nc
 
-
-     TMXNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.tmix.170502.nc
+     TMXNAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.tmix.170502.nc
 
 ! Output NetCDF file names, [1:Ngrids].
 
      GSTNAME == ocean_gst.nc
-     RSTNAME == ${WORK_DIR}/out/${CASE_NAME}.r.${R_NUM}.nc
-     HISNAME == ${WORK_DIR}/out/${CASE_NAME}.h.${R_NUM}.nc
+     RSTNAME == /Users/misumi/roms_out/roms_run/out/roms_run.r.001.nc
+     HISNAME == /Users/misumi/roms_out/roms_run/out/roms_run.h.001.nc
      TLMNAME == ocean_tlm.nc
      TLFNAME == ocean_tlf.nc
      ADJNAME == ocean_adj.nc
-     AVGNAME == ${WORK_DIR}/out/${CASE_NAME}.a.${R_NUM}.nc
-     DIANAME == ${WORK_DIR}/out/${CASE_NAME}.d.${R_NUM}.nc
+     AVGNAME == /Users/misumi/roms_out/roms_run/out/roms_run.a.001.nc
+     DIANAME == /Users/misumi/roms_out/roms_run/out/roms_run.d.001.nc
      STANAME == ocean_sta.nc
      FLTNAME == ocean_flt.nc
 

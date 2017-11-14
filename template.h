@@ -80,7 +80,7 @@
 # define LMD_SKPP
 #endif
 
-#undef  TINFLUX
+#define TINFLUX
 #undef  TCLIMATOLOGY
 #undef  TCLM_NUDGING
 
@@ -94,8 +94,9 @@
 #undef  NPZD_FRANKS
 #undef  NPZD_IRON
 #undef  NPZD_POWELL
-#undef  BEC
+#define BEC
 
+#define FE_TAG
 #undef  COAG
 
 #ifdef BIO_FENNEL
@@ -118,7 +119,7 @@
 # define ANA_BPFLUX
 #endif
 
-#if defined NPZD_FRANKS || defined NPZD_POWELL 
+#if defined NPZD_FRANKS || defined NPZD_POWELL
 # define ANA_SPFLUX
 # define ANA_BPFLUX
 #endif
