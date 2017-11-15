@@ -1,3 +1,6 @@
+export PATH='/opt/netcdf/bin:/opt/hpc/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+export DYLD_LIBRARY_PATH='/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources:/opt/hpc/lib:/opt/netcdf/lib:/usr/local/lib:/usr/lib:/lib'
+
 export CASE_NAME=`echo ${PWD##*/} | gsed -e 's/\(.*\)/\L\1/'`
 export HOME_DIR=${PWD}
 export WORK_DIR=/Users/misumi/roms_out/${CASE_NAME}
@@ -10,17 +13,16 @@ export FORT=gfortran
 export USE_SLATEC=
 export SLATEC_LIBDIR=/Users/misumi/lib
 
-export D_NTIMES=720
+export D_NTIMES=8760
 export DT=3600
-export H_NTIMES=1
-export I_NTIMES=1
-export D_DSTART=30
+export H_NTIMES=24
+export I_NTIMES=24
+export D_DSTART=365
 
 if [ "${OPT_PARALLEL}" = "on" ]; then
   export PGM=oceanM
 else
   export PGM=oceanS
-  export PGM=oceanG
 fi
 
 if [ ! -e ${WORK_DIR} ]; then
