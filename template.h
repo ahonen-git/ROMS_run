@@ -96,7 +96,7 @@
 #undef  NPZD_POWELL
 #define BEC
 
-#define FE_TAG
+#undef  FE_TAG
 #undef  COAG
 
 #ifdef BIO_FENNEL
