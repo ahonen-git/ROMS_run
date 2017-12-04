@@ -5340,6 +5340,60 @@
   'nulvar'
   1.0d0
 
+'pennChl'                                          ! Input/Output
+  'pennale Chlohrophyll'
+  'milligram meter-3'                              ! [mg/m3]
+  'pennChl, scalar, series'
+  'ocean_time'
+  'idTvar(pennChl_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennChl'                                    ! Input
+  'river runoff pennChl'
+  'milligram meter-3'                              ! [mg/m3]
+  'river_pennChl, scalar, series'
+  'river_time'
+  'idRtrc(pennChl_ind)'
+  'nulvar'
+  1.0d0
+
+'pennChl_east'                                     ! Input
+  'pennale chlorophyll eastern boundary condition'
+  'milligram meter-3'                              ! [mg/m3]
+  'pennChl_east, scalar, series'
+  'pennChl_time'
+  'idTbry(ieast,pennChl_ind)'
+  'nulvar'
+  1.0d0
+
+'pennChl_west'                                     ! Input
+  'pennale chlorophyll western boundary condition'
+  'milligram meter-3'                              ! [mg/m3]
+  'pennChl_west, scalar, series'
+  'pennChl_time'
+  'idTbry(iwest,pennChl_ind)'
+  'nulvar'
+  1.0d0
+
+'pennChl_south'                                    ! Input
+  'pennale chlorophyll southern boundary condition'
+  'milligram meter-3'                              ! [mg/m3]
+  'pennChl_south, scalar, series'
+  'pennChl_time'
+  'idTbry(isouth,pennChl_ind)'
+  'nulvar'
+  1.0d0
+
+'pennChl_north'                                    ! Input
+  'pennale chlorophyll northern boundary condition'
+  'milligram meter-3'                              ! [mg/m3]
+  'pennChl_north, scalar, series'
+  'pennChl_time'
+  'idTbry(inorth,pennChl_ind)'
+  'nulvar'
+  1.0d0
+
 'diatC'                                            ! Input/Output
   'Diatom Carbon'
   'millimole meter-3'                              ! [mmol/m3]
@@ -5394,6 +5448,60 @@
   'nulvar'
   1.0d0
 
+'pennC'                                            ! Input/Output
+  'Diatom Carbon'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennC, scalar, series'
+  'ocean_time'
+  'idTvar(pennC_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennC'                                      ! Input
+  'river runoff pennC'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennC, scalar, series'
+  'river_time'
+  'idRtrc(pennC_ind)'
+  'nulvar'
+  1.0d0
+
+'pennC_east'                                       ! Input
+  'diatom carbon eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennC_east, scalar, series'
+  'pennC_time'
+  'idTbry(ieast,pennC_ind)'
+  'nulvar'
+  1.0d0
+
+'pennC_west'                                       ! Input
+  'diatom carbon western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennC_west, scalar, series'
+  'pennC_time'
+  'idTbry(iwest,pennC_ind)'
+  'nulvar'
+  1.0d0
+
+'pennC_south'                                      ! Input
+  'diatom carbon southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennC_south, scalar, series'
+  'pennC_time'
+  'idTbry(isouth,pennC_ind)'
+  'nulvar'
+  1.0d0
+
+'pennC_north'                                      ! Input
+  'diatom carbon northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennC_north, scalar, series'
+  'pennC_time'
+  'idTbry(inorth,pennC_ind)'
+  'nulvar'
+  1.0d0
+
 'diatSi'                                           ! Input/Output
   'Diatom Silicon'
   'millimole meter-3'                              ! [mmol/m3]
@@ -5445,6 +5553,60 @@
   'diatSi_north, scalar, series'
   'diatSi_time'
   'idTbry(inorth,diatSi_ind)'
+  'nulvar'
+  1.0d0
+
+'pennSi'                                           ! Input/Output
+  'Pennale Silicon'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennSi, scalar, series'
+  'ocean_time'
+  'idTvar(pennSi_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennSi'                                     ! Input
+  'river runoff pennSi'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennSi, scalar, series'
+  'river_time'
+  'idRtrc(pennSi_ind)'
+  'nulvar'
+  1.0d0
+
+'pennSi_east'                                      ! Input
+  'Pennale silicon eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennSi_east, scalar, series'
+  'pennSi_time'
+  'idTbry(ieast,pennSi_ind)'
+  'nulvar'
+  1.0d0
+
+'pennSi_west'                                      ! Input
+  'Pennale silicon western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennSi_west, scalar, series'
+  'pennSi_time'
+  'idTbry(iwest,pennSi_ind)'
+  'nulvar'
+  1.0d0
+
+'pennSi_south'                                     ! Input
+  'Pennale silicon southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennSi_south, scalar, series'
+  'pennSi_time'
+  'idTbry(isouth,pennSi_ind)'
+  'nulvar'
+  1.0d0
+
+'pennSi_north'                                     ! Input
+  'Pennale silicon northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennSi_north, scalar, series'
+  'pennSi_time'
+  'idTbry(inorth,pennSi_ind)'
   'nulvar'
   1.0d0
 
@@ -5776,6 +5938,60 @@
   'diatFe_north, scalar, series'
   'diatFe_time'
   'idTbry(inorth,diatFe_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe'                                           ! Input/Output
+  'Pennale Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe, scalar, series'
+  'ocean_time'
+  'idTvar(pennFe_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennFe'                                     ! Input
+  'river runoff pennFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennFe, scalar, series'
+  'river_time'
+  'idRtrc(pennFe_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe_east'                                      ! Input
+  'pennale iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe_east, scalar, series'
+  'pennFe_time'
+  'idTbry(ieast,pennFe_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe_west'                                      ! Input
+  'pennale iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe_west, scalar, series'
+  'pennFe_time'
+  'idTbry(iwest,pennFe_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe_south'                                     ! Input
+  'pennale iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe_south, scalar, series'
+  'pennFe_time'
+  'idTbry(isouth,pennFe_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe_north'                                     ! Input
+  'pennale iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe_north, scalar, series'
+  'pennFe_time'
+  'idTbry(inorth,pennFe_ind)'
   'nulvar'
   1.0d0
 
@@ -6159,6 +6375,60 @@
   'nulvar'
   1.0d0
 
+'pennFe0'                                           ! Input/Output
+  'Pennale Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe0, scalar, series'
+  'ocean_time'
+  'idTvar(pennFe0_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennFe0'                                     ! Input
+  'river runoff pennFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennFe0, scalar, series'
+  'river_time'
+  'idRtrc(pennFe0_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe0_east'                                      ! Input
+  'pennale iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe0_east, scalar, series'
+  'pennFe0_time'
+  'idTbry(ieast,pennFe0_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe0_west'                                      ! Input
+  'pennale iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe0_west, scalar, series'
+  'pennFe0_time'
+  'idTbry(iwest,pennFe0_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe0_south'                                     ! Input
+  'pennale iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe0_south, scalar, series'
+  'pennFe0_time'
+  'idTbry(isouth,pennFe0_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe0_north'                                     ! Input
+  'pennale iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe0_north, scalar, series'
+  'pennFe0_time'
+  'idTbry(inorth,pennFe0_ind)'
+  'nulvar'
+  1.0d0
+
 'zooFe0'                                           ! Input/Output
   'Zoo Iron'
   'millimole meter-3'                              ! [mmol/m3]
@@ -6482,6 +6752,60 @@
   'diazFe1_north, scalar, series'
   'diazFe1_time'
   'idTbry(inorth,diazFe1_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe1'                                           ! Input/Output
+  'Pennale Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe1, scalar, series'
+  'ocean_time'
+  'idTvar(pennFe1_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennFe1'                                     ! Input
+  'river runoff pennFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennFe1, scalar, series'
+  'river_time'
+  'idRtrc(pennFe1_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe1_east'                                      ! Input
+  'pennale iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe1_east, scalar, series'
+  'pennFe1_time'
+  'idTbry(ieast,pennFe1_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe1_west'                                      ! Input
+  'pennale iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe1_west, scalar, series'
+  'pennFe1_time'
+  'idTbry(iwest,pennFe1_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe1_south'                                     ! Input
+  'pennale iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe1_south, scalar, series'
+  'pennFe1_time'
+  'idTbry(isouth,pennFe1_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe1_north'                                     ! Input
+  'pennale iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe1_north, scalar, series'
+  'pennFe1_time'
+  'idTbry(inorth,pennFe1_ind)'
   'nulvar'
   1.0d0
 
@@ -6811,6 +7135,60 @@
   'nulvar'
   1.0d0
 
+'pennFe2'                                           ! Input/Output
+  'Pennales Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe2, scalar, series'
+  'ocean_time'
+  'idTvar(pennFe2_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennFe2'                                     ! Input
+  'river runoff pennFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennFe2, scalar, series'
+  'river_time'
+  'idRtrc(pennFe2_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe2_east'                                      ! Input
+  'pennale iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe2_east, scalar, series'
+  'pennFe2_time'
+  'idTbry(ieast,pennFe2_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe2_west'                                      ! Input
+  'pennale iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe2_west, scalar, series'
+  'pennFe2_time'
+  'idTbry(iwest,pennFe2_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe2_south'                                     ! Input
+  'pennale iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe2_south, scalar, series'
+  'pennFe2_time'
+  'idTbry(isouth,pennFe2_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe2_north'                                     ! Input
+  'pennale iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe2_north, scalar, series'
+  'pennFe2_time'
+  'idTbry(inorth,pennFe2_ind)'
+  'nulvar'
+  1.0d0
+
 'zooFe2'                                           ! Input/Output
   'Zoo Iron'
   'millimole meter-3'                              ! [mmol/m3]
@@ -7134,6 +7512,60 @@
   'diazFe3_north, scalar, series'
   'diazFe3_time'
   'idTbry(inorth,diazFe3_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe3'                                           ! Input/Output
+  'Pennale Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe3, scalar, series'
+  'ocean_time'
+  'idTvar(pennFe3_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennFe3'                                     ! Input
+  'river runoff pennFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennFe3, scalar, series'
+  'river_time'
+  'idRtrc(pennFe3_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe3_east'                                      ! Input
+  'pennale iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe3_east, scalar, series'
+  'pennFe3_time'
+  'idTbry(ieast,pennFe3_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe3_west'                                      ! Input
+  'pennale iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe3_west, scalar, series'
+  'pennFe3_time'
+  'idTbry(iwest,pennFe3_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe3_south'                                     ! Input
+  'pennale iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe3_south, scalar, series'
+  'pennFe3_time'
+  'idTbry(isouth,pennFe3_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe3_north'                                     ! Input
+  'pennale iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe3_north, scalar, series'
+  'pennFe3_time'
+  'idTbry(inorth,pennFe3_ind)'
   'nulvar'
   1.0d0
 
@@ -7463,6 +7895,60 @@
   'nulvar'
   1.0d0
 
+'pennFe4'                                           ! Input/Output
+  'Pennale Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe4, scalar, series'
+  'ocean_time'
+  'idTvar(pennFe4_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennFe4'                                     ! Input
+  'river runoff pennFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennFe4, scalar, series'
+  'river_time'
+  'idRtrc(pennFe4_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe4_east'                                      ! Input
+  'pennale iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe4_east, scalar, series'
+  'pennFe4_time'
+  'idTbry(ieast,pennFe4_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe4_west'                                      ! Input
+  'pennale iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe4_west, scalar, series'
+  'pennFe4_time'
+  'idTbry(iwest,pennFe4_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe4_south'                                     ! Input
+  'pennale iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe4_south, scalar, series'
+  'pennFe4_time'
+  'idTbry(isouth,pennFe4_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe4_north'                                     ! Input
+  'pennale iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe4_north, scalar, series'
+  'pennFe4_time'
+  'idTbry(inorth,pennFe4_ind)'
+  'nulvar'
+  1.0d0
+
 'zooFe4'                                        ! Input/Output
   'Zoo Iron'
   'millimole meter-3'                              ! [mmol/m3]
@@ -7786,6 +8272,60 @@
   'diazFe5_north, scalar, series'
   'diazFe5_time'
   'idTbry(inorth,diazFe5_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe5'                                           ! Input/Output
+  'Pennale Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe5, scalar, series'
+  'ocean_time'
+  'idTvar(pennFe5_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennFe5'                                     ! Input
+  'river runoff pennFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennFe5, scalar, series'
+  'river_time'
+  'idRtrc(pennFe5_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe5_east'                                      ! Input
+  'pennale iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe5_east, scalar, series'
+  'pennFe5_time'
+  'idTbry(ieast,pennFe5_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe5_west'                                      ! Input
+  'pennale iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe5_west, scalar, series'
+  'pennFe5_time'
+  'idTbry(iwest,pennFe5_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe5_south'                                     ! Input
+  'pennale iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe5_south, scalar, series'
+  'pennFe5_time'
+  'idTbry(isouth,pennFe5_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe5_north'                                     ! Input
+  'pennale iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe5_north, scalar, series'
+  'pennFe5_time'
+  'idTbry(inorth,pennFe5_ind)'
   'nulvar'
   1.0d0
 
@@ -8115,6 +8655,60 @@
   'nulvar'
   1.0d0
 
+'pennFe6'                                           ! Input/Output
+  'Pennale Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe6, scalar, series'
+  'ocean_time'
+  'idTvar(pennFe6_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennFe6'                                     ! Input
+  'river runoff pennFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennFe6, scalar, series'
+  'river_time'
+  'idRtrc(pennFe6_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe6_east'                                      ! Input
+  'pennale iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe6_east, scalar, series'
+  'pennFe6_time'
+  'idTbry(ieast,pennFe6_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe6_west'                                      ! Input
+  'pennale iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe6_west, scalar, series'
+  'pennFe6_time'
+  'idTbry(iwest,pennFe6_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe6_south'                                     ! Input
+  'pennale iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe6_south, scalar, series'
+  'pennFe6_time'
+  'idTbry(isouth,pennFe6_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe6_north'                                     ! Input
+  'pennale iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe6_north, scalar, series'
+  'pennFe6_time'
+  'idTbry(inorth,pennFe6_ind)'
+  'nulvar'
+  1.0d0
+
 'zooFe6'                                           ! Input/Output
   'Zoo Iron'
   'millimole meter-3'                              ! [mmol/m3]
@@ -8438,6 +9032,60 @@
   'diazFe7_north, scalar, series'
   'diazFe7_time'
   'idTbry(inorth,diazFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe7'                                           ! Input/Output
+  'Pennale Iron'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe7, scalar, series'
+  'ocean_time'
+  'idTvar(pennFe7_ind)'
+  'r3dvar'
+  1.0d0
+
+'river_pennFe7'                                     ! Input
+  'river runoff pennFe'
+  'millimole meter-3'                              ! [mmol/m3]
+  'river_pennFe7, scalar, series'
+  'river_time'
+  'idRtrc(pennFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe7_east'                                      ! Input
+  'pennale iron eastern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe7_east, scalar, series'
+  'pennFe7_time'
+  'idTbry(ieast,pennFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe7_west'                                      ! Input
+  'pennale iron western boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe7_west, scalar, series'
+  'pennFe7_time'
+  'idTbry(iwest,pennFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe7_south'                                     ! Input
+  'pennale iron southern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe7_south, scalar, series'
+  'pennFe7_time'
+  'idTbry(isouth,pennFe7_ind)'
+  'nulvar'
+  1.0d0
+
+'pennFe7_north'                                     ! Input
+  'pennale iron northern boundary condition'
+  'millimole meter-3'                              ! [mmol/m3]
+  'pennFe7_north, scalar, series'
+  'pennFe7_time'
+  'idTbry(inorth,pennFe7_ind)'
   'nulvar'
   1.0d0
 

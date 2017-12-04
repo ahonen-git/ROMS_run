@@ -148,23 +148,23 @@ ad_LBC(isTvar) ==   Per     Per     Per     Per      ! idbio(:), compact
 ! Logical switches (TRUE/FALSE) to specify which variables to process for
 ! tracers climatology: [NBT,Ngrids] values are expected. See glossary below
 ! for details.
-!               0                 1                   2                   3                   4                   5                   6                   7
-!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
-  LtracerCLM == F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+!               0                 1                   2                   3                   4                   5                   6                   7                   8
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+  LtracerCLM == F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
 
 ! Logical switches (TRUE/FALSE) to specify which variables to process for
 ! tracers 3d influx: [NBT,Ngrids] values are expected. See glossary below
 ! for details. Need to turn on TINFLUX in the header file. The fifth variable
 ! is Fe.
-!               0                 1                   2                   3                   4                   5                   6                   7
-!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
-  LtracerFLX == F F F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F 
+!               0                 1                   2                   3                   4                   5                   6                   7                   8
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+  LtracerFLX == F F F F F F F F F F F F F F F F F F F F F F F F F T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
 
 ! Logical switches (TRUE/FALSE) to specify which variables to consider on
 ! tracers point Sources/Sinks (like river runoff): [NBT,Ngrids] values are
 ! expected. See glossary below for details.
 
-  LtracerSrc == 70*F
+  LtracerSrc == 81*F
 
 ! 3D ligands
 

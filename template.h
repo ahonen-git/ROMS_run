@@ -80,7 +80,7 @@
 # define LMD_SKPP
 #endif
 
-#define TINFLUX
+#undef  TINFLUX
 #undef  TCLIMATOLOGY
 #undef  TCLM_NUDGING
 

@@ -728,7 +728,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
      GRDNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.grd.161221.nc
 !tag     ININAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.ini.170706.nc
-     ININAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.ini.170413.nc
+     ININAME == ${ROMS_DAT_DIR}/v1d_l045_penn/v1d_l045.ini.171203.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_npzd.nc
@@ -771,8 +771,8 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
 !tag     FRCNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
 !tag                ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.sflux.170706.nc
-     FRCNAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
-                /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.sflux.161221.nc
+     FRCNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
+                ${ROMS_DAT_DIR}/v1d_l045_penn/v1d_l045.sflux.171204.nc
 
 
      TMXNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.tmix.170502.nc
