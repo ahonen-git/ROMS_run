@@ -727,7 +727,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 ! Input NetCDF file names, [1:Ngrids].
 
      GRDNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.grd.161221.nc
-!tag     ININAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.ini.170706.nc
+!tag     ININAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.ini.170731.nc
      ININAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.ini.170413.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
@@ -752,8 +752,8 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
      BRYNAME == /dev/null
      CLMNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.clm.161221.nc
-!tag     FLXNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.fetag.170707.nc
-     FLXNAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.fesed.170707.nc
+!tag     FLXNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.fetag.170731.nc
+     FLXNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.fesed.170707.nc
 
 ! Input forcing NetCDF file name(s).  The USER has the option to enter
 ! several file names for each nested grid.  For example, the USER may
@@ -770,9 +770,9 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
      NFFILES == 2                          ! number of unique forcing files
 
 !tag     FRCNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
-!tag                ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.sflux.170706.nc
-     FRCNAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
-                /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.sflux.161221.nc
+!tag                ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.sflux_tag.170731.nc
+     FRCNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.frc.161221.nc   \
+                ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.sflux.161221.nc
 
 
      TMXNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.tmix.170502.nc
