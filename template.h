@@ -97,6 +97,12 @@
 #define BEC
 
 #undef  FE_TAG
+
+#undef DIAGNOSTICS
+#undef DIAGNOSTICS_UV
+#undef DIAGNOSTICS_TS
+#undef DIAGNOSTICS_BIO
+
 #undef  COAG
 
 #ifdef BIO_FENNEL
