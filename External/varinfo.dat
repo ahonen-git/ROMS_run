@@ -12216,6 +12216,366 @@
   'r3dvar'
   1.0d0
 
+'Fe0_brate'                                            ! Input/Output
+  'Fe0_brate'
+  'mmol/m3'
+  'Fe0_brate, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe0_brate)'
+  'r3dvar'
+  1.0d0
+
+'Fe0_scav'                                            ! Input/Output
+  'Fe0_scav'
+  'mmol/m3'
+  'Fe0_scav, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe0_scav)'
+  'r3dvar'
+  1.0d0
+
+'Fe0_disag'                                            ! Input/Output
+  'Fe0_disag'
+  'mmol/m3'
+  'Fe0_disag, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe0_disag)'
+  'r3dvar'
+  1.0d0
+
+'Fe0_premin'                                            ! Input/Output
+  'Fe0_premin'
+  'mmol/m3'
+  'Fe0_premin, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe0_premin)'
+  'r3dvar'
+  1.0d0
+
+'Fe0_bio'                                            ! Input/Output
+  'Fe0_bio'
+  'mmol/m3'
+  'Fe0_bio, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe0_bio)'
+  'r3dvar'
+  1.0d0
+
+'Fe1_brate'                                            ! Input/Output
+  'Fe1_brate'
+  'mmol/m3'
+  'Fe1_brate, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe1_brate)'
+  'r3dvar'
+  1.0d0
+
+'Fe1_scav'                                            ! Input/Output
+  'Fe1_scav'
+  'mmol/m3'
+  'Fe1_scav, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe1_scav)'
+  'r3dvar'
+  1.0d0
+
+'Fe1_disag'                                            ! Input/Output
+  'Fe1_disag'
+  'mmol/m3'
+  'Fe1_disag, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe1_disag)'
+  'r3dvar'
+  1.0d0
+
+'Fe1_premin'                                            ! Input/Output
+  'Fe1_premin'
+  'mmol/m3'
+  'Fe1_premin, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe1_premin)'
+  'r3dvar'
+  1.0d0
+
+'Fe1_bio'                                            ! Input/Output
+  'Fe1_bio'
+  'mmol/m3'
+  'Fe1_bio, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe1_bio)'
+  'r3dvar'
+  1.0d0
+
+'Fe2_brate'                                            ! Input/Output
+  'Fe2_brate'
+  'mmol/m3'
+  'Fe2_brate, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe2_brate)'
+  'r3dvar'
+  1.0d0
+
+'Fe2_scav'                                            ! Input/Output
+  'Fe2_scav'
+  'mmol/m3'
+  'Fe2_scav, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe2_scav)'
+  'r3dvar'
+  1.0d0
+
+'Fe2_disag'                                            ! Input/Output
+  'Fe2_disag'
+  'mmol/m3'
+  'Fe2_disag, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe2_disag)'
+  'r3dvar'
+  1.0d0
+
+'Fe2_premin'                                            ! Input/Output
+  'Fe2_premin'
+  'mmol/m3'
+  'Fe2_premin, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe2_premin)'
+  'r3dvar'
+  1.0d0
+
+'Fe2_bio'                                            ! Input/Output
+  'Fe2_bio'
+  'mmol/m3'
+  'Fe2_bio, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe2_bio)'
+  'r3dvar'
+  1.0d0
+
+'Fe3_brate'                                            ! Input/Output
+  'Fe3_brate'
+  'mmol/m3'
+  'Fe3_brate, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe3_brate)'
+  'r3dvar'
+  1.0d0
+
+'Fe3_scav'                                            ! Input/Output
+  'Fe3_scav'
+  'mmol/m3'
+  'Fe3_scav, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe3_scav)'
+  'r3dvar'
+  1.0d0
+
+'Fe3_disag'                                            ! Input/Output
+  'Fe3_disag'
+  'mmol/m3'
+  'Fe3_disag, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe3_disag)'
+  'r3dvar'
+  1.0d0
+
+'Fe3_premin'                                            ! Input/Output
+  'Fe3_premin'
+  'mmol/m3'
+  'Fe3_premin, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe3_premin)'
+  'r3dvar'
+  1.0d0
+
+'Fe3_bio'                                            ! Input/Output
+  'Fe3_bio'
+  'mmol/m3'
+  'Fe3_bio, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe3_bio)'
+  'r3dvar'
+  1.0d0
+
+'Fe4_brate'                                            ! Input/Output
+  'Fe4_brate'
+  'mmol/m3'
+  'Fe4_brate, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe4_brate)'
+  'r3dvar'
+  1.0d0
+
+'Fe4_scav'                                            ! Input/Output
+  'Fe4_scav'
+  'mmol/m3'
+  'Fe4_scav, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe4_scav)'
+  'r3dvar'
+  1.0d0
+
+'Fe4_disag'                                            ! Input/Output
+  'Fe4_disag'
+  'mmol/m3'
+  'Fe4_disag, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe4_disag)'
+  'r3dvar'
+  1.0d0
+
+'Fe4_premin'                                            ! Input/Output
+  'Fe4_premin'
+  'mmol/m3'
+  'Fe4_premin, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe4_premin)'
+  'r3dvar'
+  1.0d0
+
+'Fe4_bio'                                            ! Input/Output
+  'Fe4_bio'
+  'mmol/m3'
+  'Fe4_bio, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe4_bio)'
+  'r3dvar'
+  1.0d0
+
+'Fe5_brate'                                            ! Input/Output
+  'Fe5_brate'
+  'mmol/m3'
+  'Fe5_brate, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe5_brate)'
+  'r3dvar'
+  1.0d0
+
+'Fe5_scav'                                            ! Input/Output
+  'Fe5_scav'
+  'mmol/m3'
+  'Fe5_scav, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe5_scav)'
+  'r3dvar'
+  1.0d0
+
+'Fe5_disag'                                            ! Input/Output
+  'Fe5_disag'
+  'mmol/m3'
+  'Fe5_disag, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe5_disag)'
+  'r3dvar'
+  1.0d0
+
+'Fe5_premin'                                            ! Input/Output
+  'Fe5_premin'
+  'mmol/m3'
+  'Fe5_premin, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe5_premin)'
+  'r3dvar'
+  1.0d0
+
+'Fe5_bio'                                            ! Input/Output
+  'Fe5_bio'
+  'mmol/m3'
+  'Fe5_bio, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe5_bio)'
+  'r3dvar'
+  1.0d0
+
+'Fe6_brate'                                            ! Input/Output
+  'Fe6_brate'
+  'mmol/m3'
+  'Fe6_brate, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe6_brate)'
+  'r3dvar'
+  1.0d0
+
+'Fe6_scav'                                            ! Input/Output
+  'Fe6_scav'
+  'mmol/m3'
+  'Fe6_scav, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe6_scav)'
+  'r3dvar'
+  1.0d0
+
+'Fe6_disag'                                            ! Input/Output
+  'Fe6_disag'
+  'mmol/m3'
+  'Fe6_disag, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe6_disag)'
+  'r3dvar'
+  1.0d0
+
+'Fe6_premin'                                            ! Input/Output
+  'Fe6_premin'
+  'mmol/m3'
+  'Fe6_premin, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe6_premin)'
+  'r3dvar'
+  1.0d0
+
+'Fe6_bio'                                            ! Input/Output
+  'Fe6_bio'
+  'mmol/m3'
+  'Fe6_bio, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe6_bio)'
+  'r3dvar'
+  1.0d0
+
+'Fe7_brate'                                            ! Input/Output
+  'Fe7_brate'
+  'mmol/m3'
+  'Fe7_brate, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe7_brate)'
+  'r3dvar'
+  1.0d0
+
+'Fe7_scav'                                            ! Input/Output
+  'Fe7_scav'
+  'mmol/m3'
+  'Fe7_scav, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe7_scav)'
+  'r3dvar'
+  1.0d0
+
+'Fe7_disag'                                            ! Input/Output
+  'Fe7_disag'
+  'mmol/m3'
+  'Fe7_disag, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe7_disag)'
+  'r3dvar'
+  1.0d0
+
+'Fe7_premin'                                            ! Input/Output
+  'Fe7_premin'
+  'mmol/m3'
+  'Fe7_premin, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe7_premin)'
+  'r3dvar'
+  1.0d0
+
+'Fe7_bio'                                            ! Input/Output
+  'Fe7_bio'
+  'mmol/m3'
+  'Fe7_bio, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe7_bio)'
+  'r3dvar'
+  1.0d0
+
 'pCO2'                                            ! Input/Output
   'pCO2'
   'ppm'

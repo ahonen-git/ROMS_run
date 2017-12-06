@@ -158,7 +158,7 @@ ad_LBC(isTvar) ==   Per     Per     Per     Per      ! idbio(:), compact
 ! is Fe.
 !               0                 1                   2                   3                   4                   5                   6                   7
 !               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
-  LtracerFLX == F F F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F 
+  LtracerFLX == F F F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F
 
 ! Logical switches (TRUE/FALSE) to specify which variables to consider on
 ! tracers point Sources/Sinks (like river runoff): [NBT,Ngrids] values are
@@ -207,14 +207,63 @@ Dout(iTvdif) == 70*T     ! NO3_vdiff, ...          vertical diffusion
 Dout(iphotoC_sp)   == T
 Dout(iphotoC_diat) == T
 Dout(iphotoC_diaz) == T
+Dout(ipCO2)        == T
+Dout(ipH)          == T
+Dout(iCO2_flux)    == T
+
 Dout(iFe_brate)    == T
 Dout(iFe_scav)     == T
 Dout(iFe_disag)    == T
 Dout(iFe_premin)   == T
 Dout(iFe_bio)      == T
-Dout(ipCO2)        == T
-Dout(ipH)          == T
-Dout(iCO2_flux)    == T
+
+Dout(iFe0_brate)   == T
+Dout(iFe0_scav)    == T
+Dout(iFe0_disag)   == T
+Dout(iFe0_premin)  == T
+Dout(iFe0_bio)     == T
+
+Dout(iFe1_brate)   == T
+Dout(iFe1_scav)    == T
+Dout(iFe1_disag)   == T
+Dout(iFe1_premin)  == T
+Dout(iFe1_bio)     == T
+
+Dout(iFe2_brate)   == T
+Dout(iFe2_scav)    == T
+Dout(iFe2_disag)   == T
+Dout(iFe2_premin)  == T
+Dout(iFe2_bio)     == T
+
+Dout(iFe3_brate)   == T
+Dout(iFe3_scav)    == T
+Dout(iFe3_disag)   == T
+Dout(iFe3_premin)  == T
+Dout(iFe3_bio)     == T
+
+Dout(iFe4_brate)   == T
+Dout(iFe4_scav)    == T
+Dout(iFe4_disag)   == T
+Dout(iFe4_premin)  == T
+Dout(iFe4_bio)     == T
+
+Dout(iFe5_brate)   == T
+Dout(iFe5_scav)    == T
+Dout(iFe5_disag)   == T
+Dout(iFe5_premin)  == T
+Dout(iFe5_bio)     == T
+
+Dout(iFe6_brate)   == T
+Dout(iFe6_scav)    == T
+Dout(iFe6_disag)   == T
+Dout(iFe6_premin)  == T
+Dout(iFe6_bio)     == T
+
+Dout(iFe7_brate)   == T
+Dout(iFe7_scav)    == T
+Dout(iFe7_disag)   == T
+Dout(iFe7_premin)  == T
+Dout(iFe7_bio)     == T
 
 !
 !  GLOSSARY:
