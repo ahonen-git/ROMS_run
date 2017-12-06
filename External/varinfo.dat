@@ -12171,6 +12171,51 @@
   'r3dvar'
   1.0d0
 
+'Fe_brate'                                            ! Input/Output
+  'Fe_brate'
+  'mmol/m3'
+  'Fe_brate, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe_brate)'
+  'r3dvar'
+  1.0d0
+
+'Fe_scav'                                            ! Input/Output
+  'Fe_scav'
+  'mmol/m3'
+  'Fe_scav, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe_scav)'
+  'r3dvar'
+  1.0d0
+
+'Fe_disag'                                            ! Input/Output
+  'Fe_disag'
+  'mmol/m3'
+  'Fe_disag, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe_disag)'
+  'r3dvar'
+  1.0d0
+
+'Fe_premin'                                            ! Input/Output
+  'Fe_premin'
+  'mmol/m3'
+  'Fe_premin, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe_premin)'
+  'r3dvar'
+  1.0d0
+
+'Fe_bio'                                            ! Input/Output
+  'Fe_bio'
+  'mmol/m3'
+  'Fe_bio, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe_bio)'
+  'r3dvar'
+  1.0d0
+
 'pCO2'                                            ! Input/Output
   'pCO2'
   'ppm'
