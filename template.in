@@ -702,16 +702,16 @@ Dout(M3vvis) == T       ! u_vvisc, ...       vertical viscosity
 ! active (temperature and salinity) and passive (inert) tracer diagnostic
 ! terms into DIAGNOSTIC output file: [1:NAT+NPT,Ngrids].
 
-Dout(iTrate) == T T     ! temp_rate, ...     time rate of change
-Dout(iThadv) == T T     ! temp_hadv, ...     horizontal total advection
-Dout(iTxadv) == T T     ! temp_xadv, ...     horizontal XI-advection
-Dout(iTyadv) == T T     ! temp_yadv, ...     horizontal ETA-advection
-Dout(iTvadv) == T T     ! temp_vadv, ...     vertical advection
-Dout(iThdif) == T T     ! temp_hdiff, ...    horizontal total diffusion
-Dout(iTxdif) == T T     ! temp_xdiff, ...    horizontal XI-diffusion
-Dout(iTydif) == T T     ! temp_ydiff, ...    horizontal ETA-diffusion
-Dout(iTsdif) == T T     ! temp_sdiff, ...    horizontal S-diffusion
-Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
+Dout(iTrate) == F F     ! temp_rate, ...     time rate of change
+Dout(iThadv) == F F     ! temp_hadv, ...     horizontal total advection
+Dout(iTxadv) == F F     ! temp_xadv, ...     horizontal XI-advection
+Dout(iTyadv) == F F     ! temp_yadv, ...     horizontal ETA-advection
+Dout(iTvadv) == F F     ! temp_vadv, ...     vertical advection
+Dout(iThdif) == F F     ! temp_hdiff, ...    horizontal total diffusion
+Dout(iTxdif) == F F     ! temp_xdiff, ...    horizontal XI-diffusion
+Dout(iTydif) == F F     ! temp_ydiff, ...    horizontal ETA-diffusion
+Dout(iTsdif) == F F     ! temp_sdiff, ...    horizontal S-diffusion
+Dout(iTvdif) == F F     ! temp_vdiff, ...    vertical diffusion
 
 ! Generic User parameters, [1:NUSER].
 

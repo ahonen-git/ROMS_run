@@ -12171,6 +12171,141 @@
   'r3dvar'
   1.0d0
 
+'light_lim_sp'                                            ! Input/Output
+  'light_lim_sp'
+  'mmol/m3'
+  'light_lim_sp, scalar, series'
+  'ocean_time'
+  'iDbio3(ilight_lim_sp)'
+  'r3dvar'
+  1.0d0
+
+'VNtot_sp'                                            ! Input/Output
+  'VNtot_sp'
+  'mmol/m3'
+  'VNtot_sp, scalar, series'
+  'ocean_time'
+  'iDbio3(iVNtot_sp)'
+  'r3dvar'
+  1.0d0
+
+'VFe_sp'                                            ! Input/Output
+  'VFe_sp'
+  'mmol/m3'
+  'VFe_sp, scalar, series'
+  'ocean_time'
+  'iDbio3(iVFe_sp)'
+  'r3dvar'
+  1.0d0
+
+'VPtot_sp'                                            ! Input/Output
+  'VPtot_sp'
+  'mmol/m3'
+  'VPtot_sp, scalar, series'
+  'ocean_time'
+  'iDbio3(iVPtot_sp)'
+  'r3dvar'
+  1.0d0
+
+'VSiO3_sp'                                            ! Input/Output
+  'VSiO3_sp'
+  'mmol/m3'
+  'VSiO3_sp, scalar, series'
+  'ocean_time'
+  'iDbio3(iVSiO3_sp)'
+  'r3dvar'
+  1.0d0
+
+'light_lim_diat'                                            ! Input/Output
+  'light_lim_diat'
+  'mmol/m3'
+  'light_lim_diat, scalar, series'
+  'ocean_time'
+  'iDbio3(ilight_lim_diat)'
+  'r3dvar'
+  1.0d0
+
+'VNtot_diat'                                            ! Input/Output
+  'VNtot_diat'
+  'mmol/m3'
+  'VNtot_diat, scalar, series'
+  'ocean_time'
+  'iDbio3(iVNtot_diat)'
+  'r3dvar'
+  1.0d0
+
+'VFe_diat'                                            ! Input/Output
+  'VFe_diat'
+  'mmol/m3'
+  'VFe_diat, scalar, series'
+  'ocean_time'
+  'iDbio3(iVFe_diat)'
+  'r3dvar'
+  1.0d0
+
+'VPtot_diat'                                            ! Input/Output
+  'VPtot_diat'
+  'mmol/m3'
+  'VPtot_diat, scalar, series'
+  'ocean_time'
+  'iDbio3(iVPtot_diat)'
+  'r3dvar'
+  1.0d0
+
+'VSiO3_diat'                                            ! Input/Output
+  'VSiO3_diat'
+  'mmol/m3'
+  'VSiO3_diat, scalar, series'
+  'ocean_time'
+  'iDbio3(iVSiO3_diat)'
+  'r3dvar'
+  1.0d0
+
+'light_lim_diaz'                                            ! Input/Output
+  'light_lim_diaz'
+  'mmol/m3'
+  'light_lim_diaz, scalar, series'
+  'ocean_time'
+  'iDbio3(ilight_lim_diaz)'
+  'r3dvar'
+  1.0d0
+
+'VNtot_diaz'                                            ! Input/Output
+  'VNtot_diaz'
+  'mmol/m3'
+  'VNtot_diaz, scalar, series'
+  'ocean_time'
+  'iDbio3(iVNtot_diaz)'
+  'r3dvar'
+  1.0d0
+
+'VFe_diaz'                                            ! Input/Output
+  'VFe_diaz'
+  'mmol/m3'
+  'VFe_diaz, scalar, series'
+  'ocean_time'
+  'iDbio3(iVFe_diaz)'
+  'r3dvar'
+  1.0d0
+
+'VPtot_diaz'                                            ! Input/Output
+  'VPtot_diaz'
+  'mmol/m3'
+  'VPtot_diaz, scalar, series'
+  'ocean_time'
+  'iDbio3(iVPtot_diaz)'
+  'r3dvar'
+  1.0d0
+
+'VSiO3_diaz'                                            ! Input/Output
+  'VSiO3_diaz'
+  'mmol/m3'
+  'VSiO3_diaz, scalar, series'
+  'ocean_time'
+  'iDbio3(iVSiO3_diaz)'
+  'r3dvar'
+  1.0d0
+
 'Fe_brate'                                            ! Input/Output
   'Fe_brate'
   'mmol/m3'

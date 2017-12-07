@@ -192,24 +192,63 @@ Aout(idTvar) == 70*T     ! PO4, ...                biological tracer
 ! biological tracer diagnostic terms into DIAGNOSTIC output file:
 ! [1:NBT,Ngrids].
 
-Dout(iTrate) == 70*T     ! NO3_rate, ...           time rate of change
-Dout(iThadv) == 70*T     ! NO3_hadv, ...           horizontal total advection
-Dout(iTxadv) == 70*T     ! NO3_xadv, ...           horizontal XI-advection
-Dout(iTyadv) == 70*T     ! NO3_yadv, ...           horizontal ETA-advection
-Dout(iTvadv) == 70*T     ! NO3_vadv, ...           vertical advection
-Dout(iThdif) == 70*T     ! NO3_hdiff, ...          horizontal total diffusion
-Dout(iTxdif) == 70*T     ! NO3_xdiff, ...          horizontal XI-diffusion
-Dout(iTydif) == 70*T     ! NO3_ydiff, ...          horizontal ETA-diffusion
-Dout(iTsdif) == 70*T     ! NO3_sdiff, ...          horizontal S-diffusion
-Dout(iTvdif) == 70*T     ! NO3_vdiff, ...          vertical diffusion
+! NO3_rate      0                 1                   2                   3                   4                   5                   6                   7
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+Dout(iTrate) == T T F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F
+
+! NO3_hadv      0                 1                   2                   3                   4                   5                   6                   7
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+Dout(iThadv) == F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+! NO3_xadv      0                 1                   2                   3                   4                   5                   6                   7
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+Dout(iTxadv) == T T F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F
+! NO3_yadv      0                 1                   2                   3                   4                   5                   6                   7
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+Dout(iTyadv) == T T F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F
+! NO3_vadv      0                 1                   2                   3                   4                   5                   6                   7
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+Dout(iTvadv) == T T F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F
+
+! NO3_hdiff     0                 1                   2                   3                   4                   5                   6                   7
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+Dout(iThdif) == F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+! NO3_xdiff     0                 1                   2                   3                   4                   5                   6                   7
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+Dout(iTxdif) == T T F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F
+! NO3_ydiff     0                 1                   2                   3                   4                   5                   6                   7
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+Dout(iTydif) == T T F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F
+! NO3_sdiff     0                 1                   2                   3                   4                   5                   6                   7
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+Dout(iTsdif) == T T F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F
+! NO3_vdiff     0                 1                   2                   3                   4                   5                   6                   7
+!               1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+Dout(iTvdif) == T T F F F F F F F F F F F F F F F F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F T F F F F F
 
 ! Diagnostics for BEC
 Dout(iphotoC_sp)   == T
 Dout(iphotoC_diat) == T
 Dout(iphotoC_diaz) == T
-Dout(ipCO2)        == T
-Dout(ipH)          == T
-Dout(iCO2_flux)    == T
+
+Dout(ilight_lim_sp)   == T
+Dout(iVNtot_sp)       == T
+Dout(iVFe_sp)         == T
+Dout(iVPtot_sp)       == T
+
+Dout(ilight_lim_diat) == T
+Dout(iVNtot_diat)     == T
+Dout(iVFe_diat)       == T
+Dout(iVPtot_diat)     == T
+Dout(iVSiO3_diat)     == T
+
+Dout(ilight_lim_diaz) == T
+Dout(iVNtot_diaz)     == T
+Dout(iVFe_diaz)       == T
+Dout(iVPtot_diaz)     == T
+
+Dout(ipCO2)        == F
+Dout(ipH)          == F
+Dout(iCO2_flux)    == F
 
 Dout(iFe_brate)    == T
 Dout(iFe_scav)     == T

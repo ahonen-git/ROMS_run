@@ -98,10 +98,10 @@
 
 #undef  FE_TAG
 
-#undef DIAGNOSTICS
-#undef DIAGNOSTICS_UV
-#undef DIAGNOSTICS_TS
-#undef DIAGNOSTICS_BIO
+#define DIAGNOSTICS
+#undef  DIAGNOSTICS_UV
+#define DIAGNOSTICS_TS
+#define DIAGNOSTICS_BIO
 
 #undef  COAG
 
