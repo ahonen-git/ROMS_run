@@ -2034,7 +2034,7 @@
 !------------------------------------------------------------------------------
 !  Tangent linear model impulse forcing variables.
 !
-!  Notice that additional metadata is need here because with need different
+!  Notice that additional metadata is need here ause with need different
 !  indices to avoid conflict with the forward basic state variables. They
 !  are used at the same time. The passive tracers (NAT+1:NT) are assigned
 !  internally to the same values as the basic state.
@@ -2300,11 +2300,11 @@
 !  for a particular application. For example if you have 1 cohesive and
 !  2 noncohesive sediment classes, the variable names are:
 !
-!    "mud_"          becomes   "mud_01"
-!    "mud_west_"     becomes   "mud_west_01"
-!    "mud_east_"     becomes   "mud_east_01"
-!    "mud_south_"    becomes   "mud_south_01"
-!    "mud_north_"    becomes   "mud_north_01"
+!    "mud_"          omes   "mud_01"
+!    "mud_west_"     omes   "mud_west_01"
+!    "mud_east_"     omes   "mud_east_01"
+!    "mud_south_"    omes   "mud_south_01"
+!    "mud_north_"    omes   "mud_north_01"
 !
 !    "sand_"         becomes   "sand_01",       "sand_02"
 !    "sand_west"     becomes   "sand_west_01",  "sand_west_02"
@@ -4582,6 +4582,7 @@
   'nulvar'
   1.0d0
 
+
 'O2'                                               ! Input/Output
   'Dissolved Oxygen'
   'millimole meter-3'                              ! [mmol/m3]
@@ -4905,6 +4906,7 @@
   'idTbry(inorth,don_ind)'
   'nulvar'
   1.0d0
+
 
 'DOP'                                              ! Input/Output
   'Dissolved Organic Phosphorus'
@@ -5554,11 +5556,13 @@
   'nulvar'
   1.0d0
 
+
 !-----------------------------------------------------------------------
 !  Define names of varialbes for Fe
 !-----------------------------------------------------------------------
 
 ! fe
+
 'Fe'                                               ! Input/Output
   'Dissolved Inorganic Iron'
   'millimole meter-3'                              ! [mmol/m3]
@@ -5582,7 +5586,7 @@
   'millimole meter-3'                              ! [mmol/m3]
   'Fe_east, scalar, series'
   'Fe_time'
-  'idTbry(ieast,Fe_ind)'
+  'idTbry(ieast,fe_ind)'
   'nulvar'
   1.0d0
 
@@ -5591,7 +5595,7 @@
   'millimole meter-3'                              ! [mmol/m3]
   'Fe_west, scalar, series'
   'Fe_time'
-  'idTbry(iwest,Fe_ind)'
+  'idTbry(iwest,fe_ind)'
   'nulvar'
   1.0d0
 
@@ -5600,7 +5604,7 @@
   'millimole meter-3'                              ! [mmol/m3]
   'Fe_south, scalar, series'
   'Fe_time'
-  'idTbry(isouth,Fe_ind)'
+  'idTbry(isouth,fe_ind)'
   'nulvar'
   1.0d0
 
@@ -5609,7 +5613,7 @@
   'millimole meter-3'                              ! [mmol/m3]
   'Fe_north, scalar, series'
   'Fe_time'
-  'idTbry(inorth,Fe_ind)'
+  'idTbry(inorth,fe_ind)'
   'nulvar'
   1.0d0
 
@@ -5636,7 +5640,7 @@
   'millimole meter-3'                              ! [mmol/m3]
   'DOFe_east, scalar, series'
   'DOFe_time'
-  'idTbry(ieast,doFe_ind)'
+  'idTbry(ieast,dofe_ind)'
   'nulvar'
   1.0d0
 
@@ -5645,7 +5649,7 @@
   'millimole meter-3'                              ! [mmol/m3]
   'DOFe_west, scalar, series'
   'DOFe_time'
-  'idTbry(iwest,doFe_ind)'
+  'idTbry(iwest,dofe_ind)'
   'nulvar'
   1.0d0
 
@@ -5654,7 +5658,7 @@
   'millimole meter-3'                              ! [mmol/m3]
   'DOFe_south, scalar, series'
   'DOFe_time'
-  'idTbry(isouth,doFe_ind)'
+  'idTbry(isouth,dofe_ind)'
   'nulvar'
   1.0d0
 
@@ -5663,7 +5667,7 @@
   'millimole meter-3'                              ! [mmol/m3]
   'DOFe_north, scalar, series'
   'DOFe_time'
-  'idTbry(inorth,doFe_ind)'
+  'idTbry(inorth,dofe_ind)'
   'nulvar'
   1.0d0
 
@@ -8492,764 +8496,34 @@
   1.0d0
 
 !-----------------------------------------------------------------------
-!  Define names of varialbes for CISO
+!  Define names of varialbes for BEC diagnostics
 !-----------------------------------------------------------------------
-!
-'DI13C'                                            ! Input/Output
-  'Dissolved Inorganic Carbon-13'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DI13C, scalar, series'
+
+'pH_3D'                                            ! Input/Output
+  'pH'
+  'none'                                           ! [none]
+  'pH_3D, scalar, series'
   'ocean_time'
-  'idTvar(di13c_ind)'
+  'iDbio3(ipH3D)'
   'r3dvar'
   1.0d0
 
-'river_DI13C'                                      ! Input
-  'river runoff DI13C'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_DI13C, scalar, series'
-  'river_time'
-  'idRtrc(di13c_ind)'
-  'nulvar'
-  1.0d0
-
-'DI13C_east'                                       ! Input
-  'dissolved inorganic carbon-13 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DI13C_east, scalar, series'
-  'DI13C_time'
-  'idTbry(ieast,di13c_ind)'
-  'nulvar'
-  1.0d0
-
-'DI13C_west'                                       ! Input
-  'dissolved inorganic carbon-13 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DI13C_west, scalar, series'
-  'DI13C_time'
-  'idTbry(iwest,di13c_ind)'
-  'nulvar'
-  1.0d0
-
-'DI13C_south'                                      ! Input
-  'dissolved inorganic carbon-13 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DI13C_south, scalar, series'
-  'DI13C_time'
-  'idTbry(isouth,di13c_ind)'
-  'nulvar'
-  1.0d0
-
-'DI13C_north'                                      ! Input
-  'dissolved inorganic carbon-13 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DI13C_north, scalar, series'
-  'DI13C_time'
-  'idTbry(inorth,di13c_ind)'
-  'nulvar'
-  1.0d0
-
-
-'DO13C'                                            ! Input/Output
-  'Dissolved Organic Carbon-13'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DO13C, scalar, series'
+'Fe_scav'                                          ! Input/Output
+  'Fe_scav'
+  'units'                                           ! [none]
+  'Fe_scav, scalar, series'
   'ocean_time'
-  'idTvar(do13c_ind)'
+  'iDbio3(iFe_scav)'
   'r3dvar'
   1.0d0
 
-'river_DO13C'                                      ! Input
-  'river runoff DO13C'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_DO13C, scalar, series'
-  'river_time'
-  'idRtrc(do13c_ind)'
-  'nulvar'
-  1.0d0
-
-'DO13C_east'                                       ! Input
-  'dissolved organic carbon-13 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DO13C_east, scalar, series'
-  'DO13C_time'
-  'idTbry(ieast,do13c_ind)'
-  'nulvar'
-  1.0d0
-
-'DO13C_west'                                       ! Input
-  'dissolved organic carbon-13 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DO13C_west, scalar, series'
-  'DO13C_time'
-  'idTbry(iwest,do13c_ind)'
-  'nulvar'
-  1.0d0
-
-'DO13C_south'                                      ! Input
-  'dissolved organic carbon-13 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DO13C_south, scalar, series'
-  'DO13C_time'
-  'idTbry(isouth,do13c_ind)'
-  'nulvar'
-  1.0d0
-
-'DO13C_north'                                      ! Input
-  'dissolved organic carbon-13 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DO13C_north, scalar, series'
-  'DO13C_time'
-  'idTbry(inorth,do13c_ind)'
-  'nulvar'
-  1.0d0
-
-'zoo13C'                                            ! Input/Output
-  'Zooplankton Carbon-13'
-  'millimole meter-3'                              ! [mmol/m3]
-  'zoo13C, scalar, series'
+'J_Fe'                                          ! Input/Output
+  'J_Fe'
+  'units'                                           ! [none]
+  'J_Fe, scalar, series'
   'ocean_time'
-  'idTvar(zoo13C_ind)'
+  'iDbio3(iJ_Fe)'
   'r3dvar'
-  1.0d0
-
-'river_zoo13C'                                      ! Input
-  'river runoff zoo13C'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_zoo13C, scalar, series'
-  'river_time'
-  'idRtrc(zoo13C_ind)'
-  'nulvar'
-  1.0d0
-
-'zoo13C_east'                                       ! Input
-  'zooplankton carbon-13 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'zoo13C_east, scalar, series'
-  'zoo13C_time'
-  'idTbry(ieast,zoo13C_ind)'
-  'nulvar'
-  1.0d0
-
-'zoo13C_west'                                       ! Input
-  'zooplankton carbon-13 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'zoo13C_west, scalar, series'
-  'zoo13C_time'
-  'idTbry(iwest,zoo13C_ind)'
-  'nulvar'
-  1.0d0
-
-'zoo13C_south'                                      ! Input
-  'zooplankton carbon-13 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'zoo13C_south, scalar, series'
-  'zoo13C_time'
-  'idTbry(isouth,zoo13C_ind)'
-  'nulvar'
-  1.0d0
-
-'zoo13C_north'                                      ! Input
-  'zooplankton carbon-13 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'zoo13C_north, scalar, series'
-  'zoo13C_time'
-  'idTbry(inorth,zoo13C_ind)'
-  'nulvar'
-  1.0d0
-
-'DI14C'                                            ! Input/Output
-  'Dissolved Inorganic Carbon-14'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DI14C, scalar, series'
-  'ocean_time'
-  'idTvar(di14c_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_DI14C'                                      ! Input
-  'river runoff DI14C'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_DI14C, scalar, series'
-  'river_time'
-  'idRtrc(di14c_ind)'
-  'nulvar'
-  1.0d0
-
-'DI14C_east'                                       ! Input
-  'dissolved inorganic carbon-14 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DI14C_east, scalar, series'
-  'DI14C_time'
-  'idTbry(ieast,di14c_ind)'
-  'nulvar'
-  1.0d0
-
-'DI14C_west'                                       ! Input
-  'dissolved inorganic carbon-14western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DI14C_west, scalar, series'
-  'DI14C_time'
-  'idTbry(iwest,di14c_ind)'
-  'nulvar'
-  1.0d0
-
-'DI14C_south'                                      ! Input
-  'dissolved inorganic carbon-14 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DI14C_south, scalar, series'
-  'DI14C_time'
-  'idTbry(isouth,di14c_ind)'
-  'nulvar'
-  1.0d0
-
-'DI14C_north'                                      ! Input
-  'dissolved inorganic carbon-14 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DI14C_north, scalar, series'
-  'DI14C_time'
-  'idTbry(inorth,di14c_ind)'
-  'nulvar'
-  1.0d0
-
-'DO14C'                                            ! Input/Output
-  'Dissolved Organic Carbon-14'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DO14C, scalar, series'
-  'ocean_time'
-  'idTvar(do14c_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_DO14C'                                      ! Input
-  'river runoff DO14C'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_DO14C, scalar, series'
-  'river_time'
-  'idRtrc(do14c_ind)'
-  'nulvar'
-  1.0d0
-
-'DO14C_east'                                       ! Input
-  'dissolved organic carbon-14 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DO14C_east, scalar, series'
-  'DO14C_time'
-  'idTbry(ieast,do14c_ind)'
-  'nulvar'
-  1.0d0
-
-'DO14C_west'                                       ! Input
-  'dissolved organic carbon-14 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DO14C_west, scalar, series'
-  'DO14C_time'
-  'idTbry(iwest,do14c_ind)'
-  'nulvar'
-  1.0d0
-
-'DO14C_south'                                      ! Input
-  'dissolved organic carbon-14 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DO14C_south, scalar, series'
-  'DO14C_time'
-  'idTbry(isouth,do14c_ind)'
-  'nulvar'
-  1.0d0
-
-'DO14C_north'                                      ! Input
-  'dissolved organic carbon-14 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'DO14C_north, scalar, series'
-  'DO14C_time'
-  'idTbry(inorth,do14c_ind)'
-  'nulvar'
-  1.0d0
-
-'zoo14C'                                            ! Input/Output
-  'Zooplankton Carbon-14'
-  'millimole meter-3'                              ! [mmol/m3]
-  'zoo14C, scalar, series'
-  'ocean_time'
-  'idTvar(zoo14C_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_zoo14C'                                      ! Input
-  'river runoff zoo14C'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_zoo14C, scalar, series'
-  'river_time'
-  'idRtrc(zoo14C_ind)'
-  'nulvar'
-  1.0d0
-
-'zoo14C_east'                                       ! Input
-  'zooplankton carbon-14 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'zoo14C_east, scalar, series'
-  'zoo14C_time'
-  'idTbry(ieast,zoo14C_ind)'
-  'nulvar'
-  1.0d0
-
-'zoo14C_west'                                       ! Input
-  'zooplankton carbon-14 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'zoo14C_west, scalar, series'
-  'zoo14C_time'
-  'idTbry(iwest,zoo14C_ind)'
-  'nulvar'
-  1.0d0
-
-'zoo14C_south'                                      ! Input
-  'zooplankton carbon-14 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'zoo14C_south, scalar, series'
-  'zoo14C_time'
-  'idTbry(isouth,zoo14C_ind)'
-  'nulvar'
-  1.0d0
-
-'zoo14C_north'                                      ! Input
-  'zooplankton carbon-14 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'zoo14C_north, scalar, series'
-  'zoo14C_time'
-  'idTbry(inorth,zoo14C_ind)'
-  'nulvar'
-  1.0d0
-
-'spC13'                                              ! Input/Output
-  'Small Phytoplankton Carbon-13'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spC13, scalar, series'
-  'ocean_time'
-  'idTvar(spC13_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_spC13'                                        ! Input
-  'river runoff spC13'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_spC13, scalar, series'
-  'river_time'
-  'idRtrc(spC13_ind)'
-  'nulvar'
-  1.0d0
-
-'spC13_east'                                         ! Input
-  'small phytoplankton carbon-13 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spC13_east, scalar, series'
-  'spC13_time'
-  'idTbry(ieast,spC13_ind)'
-  'nulvar'
-  1.0d0
-
-'spC13_west'                                         ! Input
-  'small phytoplankton carbon-13 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spC13_west, scalar, series'
-  'spC13_time'
-  'idTbry(iwest,spC13_ind)'
-  'nulvar'
-  1.0d0
-
-'spC13_south'                                        ! Input
-  'small phytoplankton carbon-13 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spC13_south, scalar, series'
-  'spC13_time'
-  'idTbry(isouth,spC13_ind)'
-  'nulvar'
-  1.0d0
-
-'spC13_north'                                        ! Input
-  'small phytoplankton carbon-13 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spC13_north, scalar, series'
-  'spC13_time'
-  'idTbry(inorth,spC13_ind)'
-  'nulvar'
-  1.0d0
-
-'spC14'                                              ! Input/Output
-  'Small Phytoplankton Carbon-14'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spC14, scalar, series'
-  'ocean_time'
-  'idTvar(spC14_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_spC14'                                        ! Input
-  'river runoff spC14'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_spC14, scalar, series'
-  'river_time'
-  'idRtrc(spC14_ind)'
-  'nulvar'
-  1.0d0
-
-'spC14_east'                                         ! Input
-  'small phytoplankton carbon-14 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spC14_east, scalar, series'
-  'spC14_time'
-  'idTbry(ieast,spC14_ind)'
-  'nulvar'
-  1.0d0
-
-'spC14_west'                                         ! Input
-  'small phytoplankton carbon-14 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spC14_west, scalar, series'
-  'spC14_time'
-  'idTbry(iwest,spC14_ind)'
-  'nulvar'
-  1.0d0
-
-'spC14_south'                                        ! Input
-  'small phytoplankton carbon-14 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spC14_south, scalar, series'
-  'spC14_time'
-  'idTbry(isouth,spC14_ind)'
-  'nulvar'
-  1.0d0
-
-'spC14_north'                                        ! Input
-  'small phytoplankton carbon-14 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spC14_north, scalar, series'
-  'spC14_time'
-  'idTbry(inorth,spC14_ind)'
-  'nulvar'
-  1.0d0
-
-'spCa13CO3'                                          ! Input/Output
-  'Small Phytoplankton Ca13CO3'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spCa13CO3, scalar, series'
-  'ocean_time'
-  'idTvar(spCa13CO3_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_spCa13CO3'                                    ! Input
-  'river runoff spCa13CO3'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_spCa13CO3, scalar, series'
-  'river_time'
-  'idRtrc(spCa13CO3_ind)'
-  'nulvar'
-  1.0d0
-
-'spCa13CO3_east'                                     ! Input
-  'small phytoplankton Ca13CO3 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spCa13CO3_east, scalar, series'
-  'spCa13CO3_time'
-  'idTbry(ieast,spCa13CO3_ind)'
-  'nulvar'
-  1.0d0
-
-'spCa13CO3_west'                                     ! Input
-  'small phytoplankton Ca13CO3 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spCa13CO3_west, scalar, series'
-  'spCa13CO3_time'
-  'idTbry(iwest,spCa13CO3_ind)'
-  'nulvar'
-  1.0d0
-
-'spCa13CO3_south'                                    ! Input
-  'small phytoplankton Ca13CO3 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spCa13CO3_south, scalar, series'
-  'spCa13CO3_time'
-  'idTbry(isouth,spCa13CO3_ind)'
-  'nulvar'
-  1.0d0
-
-'spCa13CO3_north'                                    ! Input
-  'small phytoplankton Ca13CO3 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spCa13CO3_north, scalar, series'
-  'spCa13CO3_time'
-  'idTbry(inorth,spCa13CO3_ind)'
-  'nulvar'
-  1.0d0
-
-'spCa14CO3'                                          ! Input/Output
-  'Small Phytoplankton Ca14CO3'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spCa14CO3, scalar, series'
-  'ocean_time'
-  'idTvar(spCa14CO3_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_spCa14CO3'                                    ! Input
-  'river runoff spCa14CO3'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_spCa14CO3, scalar, series'
-  'river_time'
-  'idRtrc(spCa14CO3_ind)'
-  'nulvar'
-  1.0d0
-
-'spCa14CO3_east'                                     ! Input
-  'small phytoplankton Ca14CO3 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spCa14CO3_east, scalar, series'
-  'spCa14CO3_time'
-  'idTbry(ieast,spCa14CO3_ind)'
-  'nulvar'
-  1.0d0
-
-'spCa14CO3_west'                                     ! Input
-  'small phytoplankton Ca14CO3 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spCa14CO3_west, scalar, series'
-  'spCa14CO3_time'
-  'idTbry(iwest,spCa14CO3_ind)'
-  'nulvar'
-  1.0d0
-
-'spCa14CO3_south'                                    ! Input
-  'small phytoplankton Ca14CO3 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spCa14CO3_south, scalar, series'
-  'spCa14CO3_time'
-  'idTbry(isouth,spCa14CO3_ind)'
-  'nulvar'
-  1.0d0
-
-'spCa14CO3_north'                                    ! Input
-  'small phytoplankton Ca14CO3 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'spCa14CO3_north, scalar, series'
-  'spCa14CO3_time'
-  'idTbry(inorth,spCa14CO3_ind)'
-  'nulvar'
-  1.0d0
-
-'diatC13'                                            ! Input/Output
-  'Diatom Carbon-13'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diatC13, scalar, series'
-  'ocean_time'
-  'idTvar(diatC13_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_diatC13'                                      ! Input
-  'river runoff diatC13'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_diatC13, scalar, series'
-  'river_time'
-  'idRtrc(diatC13_ind)'
-  'nulvar'
-  1.0d0
-
-'diatC13_east'                                       ! Input
-  'diatom carbon-13 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diatC13_east, scalar, series'
-  'diatC13_time'
-  'idTbry(ieast,diatC13_ind)'
-  'nulvar'
-  1.0d0
-
-'diatC13_west'                                       ! Input
-  'diatom carbon-13 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diatC13_west, scalar, series'
-  'diatC13_time'
-  'idTbry(iwest,diatC13_ind)'
-  'nulvar'
-  1.0d0
-
-'diatC13_south'                                      ! Input
-  'diatom carbon-13 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diatC13_south, scalar, series'
-  'diatC13_time'
-  'idTbry(isouth,diatC13_ind)'
-  'nulvar'
-  1.0d0
-
-'diatC13_north'                                      ! Input
-  'diatom carbon-13 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diatC13_north, scalar, series'
-  'diatC13_time'
-  'idTbry(inorth,diatC13_ind)'
-  'nulvar'
-  1.0d0
-
-'diatC14'                                            ! Input/Output
-  'Diatom Carbon-14'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diatC14, scalar, series'
-  'ocean_time'
-  'idTvar(diatC14_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_diatC14'                                      ! Input
-  'river runoff diatC14'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_diatC14, scalar, series'
-  'river_time'
-  'idRtrc(diatC14_ind)'
-  'nulvar'
-  1.0d0
-
-'diatC14_east'                                       ! Input
-  'diatom carbon-14 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diatC14_east, scalar, series'
-  'diatC14_time'
-  'idTbry(ieast,diatC14_ind)'
-  'nulvar'
-  1.0d0
-
-'diatC14_west'                                       ! Input
-  'diatom carbon-14 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diatC14_west, scalar, series'
-  'diatC14_time'
-  'idTbry(iwest,diatC14_ind)'
-  'nulvar'
-  1.0d0
-
-'diatC14_south'                                      ! Input
-  'diatom carbon-14 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diatC14_south, scalar, series'
-  'diatC14_time'
-  'idTbry(isouth,diatC14_ind)'
-  'nulvar'
-  1.0d0
-
-'diatC14_north'                                      ! Input
-  'diatom carbon-14 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diatC14_north, scalar, series'
-  'diatC14_time'
-  'idTbry(inorth,diatC14_ind)'
-  'nulvar'
-  1.0d0
-
-'diazC13'                                            ! Input/Output
-  'Diazotroph Carbon-13'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diazC13, scalar, series'
-  'ocean_time'
-  'idTvar(diazC13_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_diazC13'                                      ! Input
-  'river runoff diazC13'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_diazC13, scalar, series'
-  'river_time'
-  'idRtrc(diazC13_ind)'
-  'nulvar'
-  1.0d0
-
-'diazC13_east'                                       ! Input
-  'diazotroph carbon-13 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diazC13_east, scalar, series'
-  'diazC13_time'
-  'idTbry(ieast,diazC13_ind)'
-  'nulvar'
-  1.0d0
-
-'diazC13_west'                                       ! Input
-  'diazotroph carbon-13 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diazC13_west, scalar, series'
-  'diazC13_time'
-  'idTbry(iwest,diazC13_ind)'
-  'nulvar'
-  1.0d0
-
-'diazC13_south'                                      ! Input
-  'diazotroph carbon-13 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diazC13_south, scalar, series'
-  'diazC13_time'
-  'idTbry(isouth,diazC13_ind)'
-  'nulvar'
-  1.0d0
-
-'diazC13_north'                                      ! Input
-  'diazotroph carbon-13 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diazC13_north, scalar, series'
-  'diazC13_time'
-  'idTbry(inorth,diazC13_ind)'
-  'nulvar'
-  1.0d0
-
-'diazC14'                                            ! Input/Output
-  'Diazotroph Carbon-14'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diazC14, scalar, series'
-  'ocean_time'
-  'idTvar(diazC14_ind)'
-  'r3dvar'
-  1.0d0
-
-'river_diazC14'                                      ! Input
-  'river runoff diazC14'
-  'millimole meter-3'                              ! [mmol/m3]
-  'river_diazC14, scalar, series'
-  'river_time'
-  'idRtrc(diazC14_ind)'
-  'nulvar'
-  1.0d0
-
-'diazC14_east'                                       ! Input
-  'diazotroph carbon-14 eastern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diazC14_east, scalar, series'
-  'diazC14_time'
-  'idTbry(ieast,diazC14_ind)'
-  'nulvar'
-  1.0d0
-
-'diazC14_west'                                       ! Input
-  'diazotroph carbon-14 western boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diazC14_west, scalar, series'
-  'diazC14_time'
-  'idTbry(iwest,diazC14_ind)'
-  'nulvar'
-  1.0d0
-
-'diazC14_south'                                      ! Input
-  'diazotroph carbon-14 southern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diazC14_south, scalar, series'
-  'diazC14_time'
-  'idTbry(isouth,diazC14_ind)'
-  'nulvar'
-  1.0d0
-
-'diazC14_north'                                      ! Input
-  'diazotroph carbon-14 northern boundary condition'
-  'millimole meter-3'                              ! [mmol/m3]
-  'diazC14_north, scalar, series'
-  'diazC14_time'
-  'idTbry(inorth,diazC14_ind)'
-  'nulvar'
   1.0d0
 
 !-----------------------------------------------------------------------
@@ -12921,23 +12195,5 @@
   'CO2_flux, scalar, series'
   'ocean_time'
   'iDbio2(iCO2_flux)'
-  'r2dvar'
-  1.0d0
-
-'CO2_flux_w2a'                                       ! Input/Output
-  'CO2_flux_w2a'
-  'kgCO2/m2/s (positive down)'
-  'CO2_flux_w2a, scalar, series'
-  'ocean_time'
-  'iDbio2(iCO2_flux_w2a)'
-  'r2dvar'
-  1.0d0
-
-'CO2_flux_a2w'                                       ! Input/Output
-  'CO2_flux_a2w'
-  'kgCO2/m2/s (positive down)'
-  'CO2_flux_a2w, scalar, series'
-  'ocean_time'
-  'iDbio2(iCO2_flux_a2w)'
   'r2dvar'
   1.0d0
