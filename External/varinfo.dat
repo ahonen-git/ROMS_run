@@ -12333,6 +12333,15 @@
   'r3dvar'
   1.0d0
 
+'Fe_pgen'                                            ! Input/Output
+  'Fe_pgen'
+  'mmol/m3'
+  'Fe_pgen, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe_pgen)'
+  'r3dvar'
+  1.0d0
+
 'Fe_premin'                                            ! Input/Output
   'Fe_premin'
   'mmol/m3'
@@ -12342,12 +12351,12 @@
   'r3dvar'
   1.0d0
 
-'Fe_bio'                                            ! Input/Output
-  'Fe_bio'
+'Fe_hbio'                                            ! Input/Output
+  'Fe_hbio'
   'mmol/m3'
-  'Fe_bio, scalar, series'
+  'Fe_hbio, scalar, series'
   'ocean_time'
-  'iDbio3(iFe_bio)'
+  'iDbio3(iFe_hbio)'
   'r3dvar'
   1.0d0
 
@@ -12378,6 +12387,15 @@
   'r3dvar'
   1.0d0
 
+'Fe0_pgen'                                            ! Input/Output
+  'Fe0_pgen'
+  'mmol/m3'
+  'Fe0_pgen, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe0_pgen)'
+  'r3dvar'
+  1.0d0
+
 'Fe0_premin'                                            ! Input/Output
   'Fe0_premin'
   'mmol/m3'
@@ -12387,12 +12405,12 @@
   'r3dvar'
   1.0d0
 
-'Fe0_bio'                                            ! Input/Output
-  'Fe0_bio'
+'Fe0_hbio'                                            ! Input/Output
+  'Fe0_hbio'
   'mmol/m3'
-  'Fe0_bio, scalar, series'
+  'Fe0_hbio, scalar, series'
   'ocean_time'
-  'iDbio3(iFe0_bio)'
+  'iDbio3(iFe0_hbio)'
   'r3dvar'
   1.0d0
 
@@ -12423,6 +12441,15 @@
   'r3dvar'
   1.0d0
 
+'Fe1_pgen'                                            ! Input/Output
+  'Fe1_pgen'
+  'mmol/m3'
+  'Fe1_pgen, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe1_pgen)'
+  'r3dvar'
+  1.0d0
+
 'Fe1_premin'                                            ! Input/Output
   'Fe1_premin'
   'mmol/m3'
@@ -12432,12 +12459,12 @@
   'r3dvar'
   1.0d0
 
-'Fe1_bio'                                            ! Input/Output
-  'Fe1_bio'
+'Fe1_hbio'                                            ! Input/Output
+  'Fe1_hbio'
   'mmol/m3'
-  'Fe1_bio, scalar, series'
+  'Fe1_hbio, scalar, series'
   'ocean_time'
-  'iDbio3(iFe1_bio)'
+  'iDbio3(iFe1_hbio)'
   'r3dvar'
   1.0d0
 
@@ -12468,6 +12495,15 @@
   'r3dvar'
   1.0d0
 
+'Fe2_pgen'                                            ! Input/Output
+  'Fe2_pgen'
+  'mmol/m3'
+  'Fe2_pgen, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe2_pgen)'
+  'r3dvar'
+  1.0d0
+
 'Fe2_premin'                                            ! Input/Output
   'Fe2_premin'
   'mmol/m3'
@@ -12477,12 +12513,12 @@
   'r3dvar'
   1.0d0
 
-'Fe2_bio'                                            ! Input/Output
-  'Fe2_bio'
+'Fe2_hbio'                                            ! Input/Output
+  'Fe2_hbio'
   'mmol/m3'
-  'Fe2_bio, scalar, series'
+  'Fe2_hbio, scalar, series'
   'ocean_time'
-  'iDbio3(iFe2_bio)'
+  'iDbio3(iFe2_hbio)'
   'r3dvar'
   1.0d0
 
@@ -12513,6 +12549,15 @@
   'r3dvar'
   1.0d0
 
+'Fe3_pgen'                                            ! Input/Output
+  'Fe3_pgen'
+  'mmol/m3'
+  'Fe3_pgen, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe3_pgen)'
+  'r3dvar'
+  1.0d0
+
 'Fe3_premin'                                            ! Input/Output
   'Fe3_premin'
   'mmol/m3'
@@ -12522,12 +12567,12 @@
   'r3dvar'
   1.0d0
 
-'Fe3_bio'                                            ! Input/Output
-  'Fe3_bio'
+'Fe3_hbio'                                            ! Input/Output
+  'Fe3_hbio'
   'mmol/m3'
-  'Fe3_bio, scalar, series'
+  'Fe3_hbio, scalar, series'
   'ocean_time'
-  'iDbio3(iFe3_bio)'
+  'iDbio3(iFe3_hbio)'
   'r3dvar'
   1.0d0
 
@@ -12558,6 +12603,15 @@
   'r3dvar'
   1.0d0
 
+'Fe4_pgen'                                            ! Input/Output
+  'Fe4_pgen'
+  'mmol/m3'
+  'Fe4_pgen, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe4_pgen)'
+  'r3dvar'
+  1.0d0
+
 'Fe4_premin'                                            ! Input/Output
   'Fe4_premin'
   'mmol/m3'
@@ -12567,12 +12621,12 @@
   'r3dvar'
   1.0d0
 
-'Fe4_bio'                                            ! Input/Output
-  'Fe4_bio'
+'Fe4_hbio'                                            ! Input/Output
+  'Fe4_hbio'
   'mmol/m3'
-  'Fe4_bio, scalar, series'
+  'Fe4_hbio, scalar, series'
   'ocean_time'
-  'iDbio3(iFe4_bio)'
+  'iDbio3(iFe4_hbio)'
   'r3dvar'
   1.0d0
 
@@ -12603,6 +12657,15 @@
   'r3dvar'
   1.0d0
 
+'Fe5_pgen'                                            ! Input/Output
+  'Fe5_pgen'
+  'mmol/m3'
+  'Fe5_pgen, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe5_pgen)'
+  'r3dvar'
+  1.0d0
+
 'Fe5_premin'                                            ! Input/Output
   'Fe5_premin'
   'mmol/m3'
@@ -12612,12 +12675,12 @@
   'r3dvar'
   1.0d0
 
-'Fe5_bio'                                            ! Input/Output
-  'Fe5_bio'
+'Fe5_hbio'                                            ! Input/Output
+  'Fe5_hbio'
   'mmol/m3'
-  'Fe5_bio, scalar, series'
+  'Fe5_hbio, scalar, series'
   'ocean_time'
-  'iDbio3(iFe5_bio)'
+  'iDbio3(iFe5_hbio)'
   'r3dvar'
   1.0d0
 
@@ -12648,6 +12711,15 @@
   'r3dvar'
   1.0d0
 
+'Fe6_pgen'                                            ! Input/Output
+  'Fe6_pgen'
+  'mmol/m3'
+  'Fe6_pgen, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe6_pgen)'
+  'r3dvar'
+  1.0d0
+
 'Fe6_premin'                                            ! Input/Output
   'Fe6_premin'
   'mmol/m3'
@@ -12657,12 +12729,12 @@
   'r3dvar'
   1.0d0
 
-'Fe6_bio'                                            ! Input/Output
-  'Fe6_bio'
+'Fe6_hbio'                                            ! Input/Output
+  'Fe6_hbio'
   'mmol/m3'
-  'Fe6_bio, scalar, series'
+  'Fe6_hbio, scalar, series'
   'ocean_time'
-  'iDbio3(iFe6_bio)'
+  'iDbio3(iFe6_hbio)'
   'r3dvar'
   1.0d0
 
@@ -12693,6 +12765,15 @@
   'r3dvar'
   1.0d0
 
+'Fe7_pgen'                                            ! Input/Output
+  'Fe7_pgen'
+  'mmol/m3'
+  'Fe7_pgen, scalar, series'
+  'ocean_time'
+  'iDbio3(iFe7_pgen)'
+  'r3dvar'
+  1.0d0
+
 'Fe7_premin'                                            ! Input/Output
   'Fe7_premin'
   'mmol/m3'
@@ -12702,12 +12783,12 @@
   'r3dvar'
   1.0d0
 
-'Fe7_bio'                                            ! Input/Output
-  'Fe7_bio'
+'Fe7_hbio'                                            ! Input/Output
+  'Fe7_hbio'
   'mmol/m3'
-  'Fe7_bio, scalar, series'
+  'Fe7_hbio, scalar, series'
   'ocean_time'
-  'iDbio3(iFe7_bio)'
+  'iDbio3(iFe7_hbio)'
   'r3dvar'
   1.0d0
 

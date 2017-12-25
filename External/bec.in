@@ -253,56 +253,65 @@ Dout(iCO2_flux)    == F
 Dout(iFe_brate)    == T
 Dout(iFe_scav)     == T
 Dout(iFe_disag)    == T
+Dout(iFe_pgen)     == T
 Dout(iFe_premin)   == T
-Dout(iFe_bio)      == T
+Dout(iFe_hbio)     == T
 
 Dout(iFe0_brate)   == T
 Dout(iFe0_scav)    == T
 Dout(iFe0_disag)   == T
+Dout(iFe0_pgen)    == T
 Dout(iFe0_premin)  == T
-Dout(iFe0_bio)     == T
+Dout(iFe0_hbio)    == T
 
 Dout(iFe1_brate)   == T
 Dout(iFe1_scav)    == T
 Dout(iFe1_disag)   == T
+Dout(iFe1_pgen)    == T
 Dout(iFe1_premin)  == T
-Dout(iFe1_bio)     == T
+Dout(iFe1_hbio)    == T
 
 Dout(iFe2_brate)   == T
 Dout(iFe2_scav)    == T
 Dout(iFe2_disag)   == T
+Dout(iFe2_pgen)    == T
 Dout(iFe2_premin)  == T
-Dout(iFe2_bio)     == T
+Dout(iFe2_hbio)    == T
 
 Dout(iFe3_brate)   == T
 Dout(iFe3_scav)    == T
 Dout(iFe3_disag)   == T
+Dout(iFe3_pgen)    == T
 Dout(iFe3_premin)  == T
-Dout(iFe3_bio)     == T
+Dout(iFe3_hbio)    == T
 
 Dout(iFe4_brate)   == T
 Dout(iFe4_scav)    == T
 Dout(iFe4_disag)   == T
+Dout(iFe4_pgen)    == T
 Dout(iFe4_premin)  == T
-Dout(iFe4_bio)     == T
+Dout(iFe4_hbio)    == T
 
 Dout(iFe5_brate)   == T
 Dout(iFe5_scav)    == T
 Dout(iFe5_disag)   == T
+Dout(iFe5_pgen)    == T
 Dout(iFe5_premin)  == T
-Dout(iFe5_bio)     == T
+Dout(iFe5_hbio)    == T
 
 Dout(iFe6_brate)   == T
 Dout(iFe6_scav)    == T
 Dout(iFe6_disag)   == T
+Dout(iFe6_pgen)    == T
 Dout(iFe6_premin)  == T
-Dout(iFe6_bio)     == T
+Dout(iFe6_hbio)    == T
 
 Dout(iFe7_brate)   == T
 Dout(iFe7_scav)    == T
 Dout(iFe7_disag)   == T
+Dout(iFe7_pgen)    == T
 Dout(iFe7_premin)  == T
-Dout(iFe7_bio)     == T
+Dout(iFe7_hbio)    == T
 
 !
 !  GLOSSARY:
