@@ -86,7 +86,7 @@ cp ${HOME_DIR}/${name}.in ${WORK_DIR}/in
 EOF
 }
 
-source build.config.inx
+source build.config.sgi8600
 
 num=${R_NUM}
 name=${CASE_NAME}_${num}

@@ -728,7 +728,7 @@ Dout(iTvdif) == T T     ! temp_vdiff, ...    vertical diffusion
 
      GRDNAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.grd.161221.nc
 !tag     ININAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.ini.170731.nc
-     ININAME == /Users/misumi/roms_data/v1d_l045_fetag/v1d_l045.ini.170413.nc
+     ININAME == ${ROMS_DAT_DIR}/v1d_l045_fetag/v1d_l045.ini.170413.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_ecosim.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_nemuro.nc
 !    ININAME == Data/ROMS/Initial/bio_toy_ini_npzd.nc

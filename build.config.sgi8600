@@ -1,12 +1,12 @@
 export CASE_NAME=`echo ${PWD##*/}`
 export JOB_NAME="xxx"
 export HOME_DIR=${PWD}
-export WORK_DIR=/wrk/misumi/roms_out/${CASE_NAME}
-export ROMS_SRC_DIR=/wrk/misumi/roms_src/ROMS-BEC
-export ROMS_DAT_DIR=/wrk/misumi/roms_data
+export WORK_DIR=/lustre/wrk/misumi/roms_out/${CASE_NAME}
+export ROMS_SRC_DIR=/lustre/wrk/misumi/roms_src/ROMS-BEC
+export ROMS_DAT_DIR=/lustre/wrk/misumi/roms_data
 export OPT_PARALLEL=
-export D_CODE=170038
-export QUE=xa
+export D_CODE=180289
+export QUE=a
 export N_NODES=1
 export N_CPUS=1
 export N_MPIP=1
@@ -15,7 +15,8 @@ export WALL_TIME=12:00:00
 export R_NUM=001
 export FORT=ifort
 
-export USE_SLATEC=on
+#export USE_SLATEC=on
+export USE_SLATEC=
 export SLATEC_LIBDIR=/home/misumi/lib
 
 export P_JOB=
