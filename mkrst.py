@@ -45,7 +45,8 @@ p_num = p_num.zfill(3)
 ntimes = os.environ['D_NTIMES']
 dt = os.environ['DT']
 d_dstart = os.environ['D_DSTART']
-
+h_ntimes = os.environ['H_NTIMES']
+i_ntimes = os.environ['I_NTIMES']
 
 inifile = os.environ['WORK_DIR'] + "/out/" + case_name + ".r." + p_num + ".nc"
 rstfile = os.environ['WORK_DIR'] + "/out/" + case_name + ".r." + r_num + ".nc"
@@ -80,6 +81,16 @@ for line in fi0:
       line = mod_file(line, avgfile)
     elif re.match(r'^\s*NTIMES\s*==',line):
       line = mod_ntimes(line, ntimes)
+    elif re.match(r'^\s*NRST\s*==',line):
+      line = mod_ntimes(line, h_ntimes) 
+    elif re.match(r'^\s*NHIS\s*==',line):
+      line = mod_ntimes(line, h_ntimes) 
+    elif re.match(r'^\s*NAVG\s*==',line):
+      line = mod_ntimes(line, h_ntimes) 
+    elif re.match(r'^\s*NDIA\s*==',line):
+      line = mod_ntimes(line, h_ntimes) 
+    elif re.match(r'^\s*NINFO\s*==',line):
+      line = mod_ntimes(line, i_ntimes) 
     elif re.match(r'^\s*DT\s*==',line):
       line = mod_dt(line, dt)
     elif re.match(r'^\s*DSTART\s*=',line):
